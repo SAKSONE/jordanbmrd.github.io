@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Jordan Baumard</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Patrick+Hand" rel="stylesheet">
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+  <style type="text/css">
+    .typewriter{
+      color: #fff;
+      font-family: monospace;
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      border-right: .15em solid orange; /* The typwriter cursor */
+      white-space: nowrap; /* Keeps the content on a single line */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      letter-spacing: .15em; /* Adjust as needed */
+      animation: 
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+    }
+
+    /* The typing effect */
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #663399 }
+    }
+
+    .staffcard{
+      border: 3px solid black;
+      transition-duration: 0.18s;
+    }
+    .staffcard:hover{
+      transition-duration: 0.18s;
+      -webkit-transform: translateY(-7%);
+      -ms-transform: translateY(-7%);
+          transform: translateY(-7%);
+      -webkit-transition: -webkit-transform 0.18s ease-out;
+    }
+  </style>
+</head>
+<body>
+  <div class="containerx">
+    <section class="namezone">
+      <br><br><br>
+      <p style="text-align: center; font-size: 50px;" class="typewriter">Jordan Baumard.</p>
+      <br><br><br><br><br><br>
+    </section>
+
+    <section class="diagonalseparator" id="apropos">
+      <div data-aos="fade-right">
+        <img src="./img/logo.png" width="10%" style="transform: rotate(5deg);">
+        <p>À propos de moi</p>
+      </div>
+      <br>
+      <div class="container" style="color: #2e3131; font-family: sans-serif; font-size: 20px;">
+        <small>Depuis 2016, je développe des sites internets et des jeux vidéos à l'aide de l'Unity Engine. Je programme en HTML/CSS/PHP/C# et d'autres langages... J'ai pu apprendre Ruby on Rails grâce au projet <span style="color: #00b5cc;">#Shar</span>.</small>
+        <br><br>
+        <center><hr width="40%"></center>
+        <br>
+        <div data-aos="fade-left">
+          <p style="font-size: 40px; font-family: 'Lobster', cursive; font-weight: normal; color: #be35b0;"><svg aria-hidden="true" data-prefix="fas" data-icon="trophy-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-trophy-alt fa-w-18 fa-3x" style="width: 45px; transform: rotate(10deg);"><path fill="currentColor" d="M552 64H448V24c0-13.3-10.7-24-24-24H152c-13.3 0-24 10.7-24 24v40H24C10.7 64 0 74.7 0 88v56c0 66.5 77.9 131.7 171.9 142.4C203.3 338.5 240 360 240 360v72h-48c-35.3 0-64 20.7-64 56v12c0 6.6 5.4 12 12 12h296c6.6 0 12-5.4 12-12v-12c0-35.3-28.7-56-64-56h-48v-72s36.7-21.5 68.1-73.6C498.4 275.6 576 210.3 576 144V88c0-13.3-10.7-24-24-24zM64 144v-16h64.2c1 32.6 5.8 61.2 12.8 86.2-47.5-16.4-77-49.9-77-70.2zm448 0c0 20.2-29.4 53.8-77 70.2 7-25 11.8-53.6 12.8-86.2H512v16zm-127.3 4.7l-39.6 38.6 9.4 54.6c1.7 9.8-8.7 17.2-17.4 12.6l-49-25.8-49 25.8c-8.8 4.6-19.1-2.9-17.4-12.6l9.4-54.6-39.6-38.6c-7.1-6.9-3.2-19 6.7-20.5l54.8-8 24.5-49.6c4.4-8.9 17.1-8.9 21.5 0l24.5 49.6 54.8 8c9.6 1.5 13.5 13.6 6.4 20.5z" class=""></path></svg><br>L'équipe de choc</p>
+        </div>
+        <br><br>
+        <ul style="display: flex; justify-content: space-around; width: 100%;">
+          <li style="flex: 33%;">
+            <div data-aos="zoom-in"><a href="https://matthieuporte.github.io" target="_blank" style="color: black;">
+              <img src="https://matthieuporte.github.io/images/avatar.jpg" class="staffcard">
+              <br><br>
+              <strong style="font-size: 30px;">Matthieu Porte</strong><br>
+              <em><small style="font-weight: normal;">Développeur web</small></em>
+            </a></div>
+          </li>
+          <li style="flex: 33%; margin-left: 30px; margin-right: 30px;">
+            <div data-aos="zoom-in"><a href="#" style="color: black;" target="_blank">
+              <img src="https://matthieuporte.github.io/images/marius.jpg" width="100%" class="staffcard">
+              <br><br>
+              <strong style="font-size: 30px;">Marius Coudray</strong><br>
+              <em><small style="font-weight: normal;">Développeur logiciel</small></em>
+            </a></div>
+          </li>
+          <li style="flex: 33%; display: block;">
+            <div data-aos="zoom-in"><a href="#" style="color: black;" target="_blank">
+              <img src="https://cdn.discordapp.com/avatars/315852341620244491/0da375038f475696c37ea9cefbe3073f.png" width="100%" class="staffcard">
+              <br><br>
+              <strong style="font-size: 30px;">Paul Mairesse</strong><br>
+              <em><small style="font-weight: normal;">Développeur de jeux vidéos</small></em>
+            </a></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div data-aos="fade-right">
+        <p style="margin-right: 45px;">Mes compétences</p>
+        <br><br>
+      </div>
+      <ul style="display: flex;">
+        <div data-aos="zoom-in">
+          <li style="flex: 33%;">
+            <div style="font-size: 15px;">
+              <svg aria-hidden="true" data-prefix="far" data-icon="window" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-window fa-w-16 fa-3x" style="width: 50px;"><path fill="currentColor" d="M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-208 80c0-17.7 14.3-32 32-32s32 14.3 32 32-14.3 32-32 32-32-14.3-32-32zm-96 0c0-17.7 14.3-32 32-32s32 14.3 32 32-14.3 32-32 32-32-14.3-32-32zm-96 0c0-17.7 14.3-32 32-32s32 14.3 32 32-14.3 32-32 32-32-14.3-32-32zm400 314c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V192h416v234z" class=""></path></svg>
+              <br><br>
+              <h3 style="font-family: 'Patrick Hand', cursive; font-size: 25px;">Front-End Designer</h3>
+              <p style="text-align:justify;">
+                Je maîtrise différents langages tels que CSS/JavaScript qui me permettent de réaliser de belles interfaces web.
+              </p>
+            </div>
+          </li>
+        </div>
+        <div data-aos="zoom-in">
+          <li style="flex: 33%;">
+            <div style="font-size: 15px;">
+              <svg aria-hidden="true" data-prefix="fas" data-icon="cookie-bite" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-cookie-bite fa-w-16 fa-3x" style="width: 50px;"><path fill="currentColor" d="M510.52 255.82c-69.97-.85-126.47-57.69-126.47-127.86-70.17 0-127-56.49-127.86-126.45-27.26-4.14-55.13.3-79.72 12.82l-69.13 35.22a132.221 132.221 0 0 0-57.79 57.81l-35.1 68.88a132.645 132.645 0 0 0-12.82 80.95l12.08 76.27a132.521 132.521 0 0 0 37.16 72.96l54.77 54.76a132.036 132.036 0 0 0 72.71 37.06l76.71 12.15c27.51 4.36 55.7-.11 80.53-12.76l69.13-35.21a132.273 132.273 0 0 0 57.79-57.81l35.1-68.88c12.56-24.64 17.01-52.58 12.91-79.91zM176 368c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm32-160c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm160 128c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z" class=""></path></svg>
+              <br><br>
+              <h3 style="font-family: 'Patrick Hand', cursive; font-size: 25px;">Back-End Developer</h3>
+              <p style="text-align:justify; padding-left: 55px; padding-right: 55px;">
+                J'ai appris à coder à l'aide de Ruby on Rails (utilisé sur Twitter, etc.) grâce à un projet nommé <span style="color: #00b5cc;">#Shar</span>. D'autres projets tel que celui-ci me permettent d'apprendre de nouveaux langages.
+              </p>
+            </div>
+          </li>
+        </div>
+        <div data-aos="zoom-in">
+          <li style="flex: 33%;">
+            <div style="font-size: 15px;">
+              <svg aria-hidden="true" data-prefix="far" data-icon="gamepad" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-gamepad fa-w-20 fa-3x" style="width: 50px;"><path fill="currentColor" d="M256 240v32c0 4.4-3.6 8-8 8h-48v48c0 4.4-3.6 8-8 8h-32c-4.4 0-8-3.6-8-8v-48h-48c-4.4 0-8-3.6-8-8v-32c0-4.4 3.6-8 8-8h48v-48c0-4.4 3.6-8 8-8h32c4.4 0 8 3.6 8 8v48h48c4.4 0 8 3.6 8 8zm240-64c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm-64 80c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm32-128H176c-70.8 0-128 57.3-128 128 0 70.8 57.3 128 128 128 56.2 0 86.1-33.3 101.7-48h84.6c16.2 15.3 45.9 48 101.7 48 70.8 0 128-57.3 128-128 0-70.8-57.3-128-128-128m0-48c97.2 0 176 78.8 176 176s-78.8 176-176 176c-46.8 0-89.3-18.2-120.8-48h-46.4c-31.5 29.8-74 48-120.8 48C78.8 432 0 353.2 0 256S78.8 80 176 80h288z" class=""></path></svg>
+              <br><br>
+              <h3 style="font-family: 'Patrick Hand', cursive; font-size: 25px;">Gamer</h3>
+              <p style="text-align:justify;">
+                J'adore les jeux de console (ex: RDR2, GTA, etc.). Ceux-ci me permettent de d'imaginer de nouvelles choses et améliorer mes créations.
+              </p>
+            </div>
+          </li>
+        </div>
+      </ul>
+      <br><br>
+    </section>
+
+    <section class="projects content diagonalseparator" id="projects" style="background-color: white !important;">
+      <div data-aos="fade-left">
+        <p style="">Mes projets</p>
+      </div>
+      <ul class="projectslist">
+        <!-- <br>
+        <li class="shar">
+          <h2 class="shartitle">Shar</h2>
+          <p>
+            Shar est un projet réalisé par l'équipe Deway.<br>
+            Lien: <a href="#" target="_blank">http://35.180.152.234/</a>
+            <br><br><br><br>
+            Partagez votre passion, vos créations et rejoignez vos amis en vous inscrivant gratuitement !
+          </p>
+        </li>
+        <br> -->
+        <li data-aos="zoom-out">
+          <a href="http://35.180.152.234/" target="_blank" title="http://35.180.152.234/"><svg aria-hidden="true" data-prefix="fas" data-icon="arrow-alt-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-alt-right fa-w-14 fa-3x" style="width: 10px;"><path fill="currentColor" d="M0 304v-96c0-13.3 10.7-24 24-24h200V80.2c0-21.4 25.8-32.1 41-17L441 239c9.4 9.4 9.4 24.6 0 34L265 448.7c-15.1 15.1-41 4.4-41-17V328H24c-13.3 0-24-10.7-24-24z" class=""></path></svg>&nbsp;Shar</a>
+        </li>
+        <li data-aos="zoom-out">
+          <a href="#" onclick="convert(prompt('Choisissez un nombre sous forme décimale:')); return false;"><svg aria-hidden="true" data-prefix="fas" data-icon="arrow-alt-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-alt-right fa-w-14 fa-3x" style="width: 10px;"><path fill="currentColor" d="M0 304v-96c0-13.3 10.7-24 24-24h200V80.2c0-21.4 25.8-32.1 41-17L441 239c9.4 9.4 9.4 24.6 0 34L265 448.7c-15.1 15.1-41 4.4-41-17V328H24c-13.3 0-24-10.7-24-24z" class=""></path></svg>&nbsp;Convertisseur de nombre (Cliquer pour essayer maintenant)</a>
+        </li>
+        <li data-aos="zoom-out">
+          <a href="#" onclick="guessTheNumber(prompt('Maximum ?')); return false;"><svg aria-hidden="true" data-prefix="fas" data-icon="arrow-alt-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-alt-right fa-w-14 fa-3x" style="width: 10px;"><path fill="currentColor" d="M0 304v-96c0-13.3 10.7-24 24-24h200V80.2c0-21.4 25.8-32.1 41-17L441 239c9.4 9.4 9.4 24.6 0 34L265 448.7c-15.1 15.1-41 4.4-41-17V328H24c-13.3 0-24-10.7-24-24z" class=""></path></svg>&nbsp;Guess the Number (Cliquer pour essayer maintenant)</a>
+        </li>
+        <br><br><br><br><br><small>Les autres arrivent bientôt, patience...</small><br>
+      </ul>
+    </section>
+
+    <section class="footer">
+    	<center>
+        <div class="footer-list">
+      		<ul>
+      			<li align="left"><a href="#apropos">À propos</a></li>
+      			<li align="left"><a href="#skills">Mes compétences</a></li>
+      			<li align="left"><a href="#projects">Mes projets</a></li>
+            <br>
+            <li class="signature">Made with <svg aria-hidden="true" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-3x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg> by Jordan &copy;</li>
+      		</ul>
+        </div>
+    	</center>
+    </section>
+  </div>
+
+  <script  src="js/index.js"></script>
+  <!-- <script type="text/javascript">
+    var name = "Jordan Baumard";
+    var nameArray = name.split('');
+    var nameLooper;
+
+    function loop(){
+      if(name.length > 0){
+        document.getElementById("name").innerHTML += nameArray.shift();
+      }
+      else{
+        clearTimout(nameLooper);
+      }
+
+      nameLooper = setTimeout('loop()', 120);
+    }
+
+    loop();
+  </script> -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript">
+      AOS.init();
+    </script>
+
+    <script type="text/javascript">
+      function simpleParallax(intensity, element) {
+          $(window).scroll(function() {
+              var scrollTop = $(window).scrollTop();
+              var imgPos = scrollTop / intensity + 'px';
+              element.css('transform', 'translateY(' + imgPos + ')');
+          });
+      }
+
+      simpleParallax(2.8, $(".namezone"));
+    </script>
+    <script type="text/javascript" src="./numbConverter.js"></script>
+    <script type="text/javascript" src="./guessTheNumber.js"></script>
+
+
+
+  <!--
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  ! License for a part of the website. Ignore this. !
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+  Copyright (c) 2018 by Olivier Fortin (https://codepen.io/olivier-fortin/pen/KwRvyM)
+
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  -->
+
+
+</body>
+</html>

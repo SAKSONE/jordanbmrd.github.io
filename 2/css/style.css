@@ -1,0 +1,104 @@
+body {
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+body .containerx {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+}
+body .containerx section {
+  position: relative;
+  padding: 5em;
+  background: linear-gradient(50deg, #ff4169 0, #7c26f8 100%);
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  /* Styling for Pseudo-Elements */
+  /* Double Diagonal Separator */
+}
+body .containerx section::before, body .containerx section::after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+}
+body .containerx section.diagonalseparator {
+  z-index: 1;
+  padding-top: 2em;
+  background: white;
+  color: #be35b0;
+}
+body .containerx section.diagonalseparator::before, body .containerx section.diagonalseparator::after {
+  top: 0;
+  left: -25%;
+  z-index: -1;
+  width: 150%;
+  height: 75%;
+  background: inherit;
+  -webkit-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.footer{
+  background: lightgray !important;
+}
+.footer ul li a, .signature{
+  text-transform: uppercase;
+  color: black;
+  font-weight: initial;
+  font-size: initial;
+}
+.footer ul li a:hover{
+  text-decoration: underline;
+}
+.footer-list{
+  display: flex;
+  text-align:center;
+  width: 100%;
+}
+.signature svg{
+  width: 15px;
+  color: red;
+}
+.signature{
+  color: red;
+}
+
+.projectslist{
+  color: initial; font-size: initial; font-weight: initial; list-style-type: none !important;
+  padding-bottom: 50px;
+}
+.projectslist .shartitle{
+  text-transform: uppercase;
+  color: black;
+  font-size: 150px;
+
+  border-bottom: 6px solid black;
+
+  text-shadow: 1px 0px 5px rgba(149, 150, 150, 1);
+
+  margin-bottom: 0;
+}
+.shar{
+  border: 6px solid black;
+  background-image: url('https://matthieuporte.github.io/images/shar.png');
+  background-repeat: no-repeat;
+  background-position: all;
+  background-size: auto;
+  width: 100%;
+}
+.shar p, .shar h2 {
+  text-align:right;
+  padding-right: 30px;
+}
+.shar p{
+  padding: 30px;
+}
+.projectslist .shar img{
+  width: 40%;
+}

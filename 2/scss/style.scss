@@ -1,0 +1,61 @@
+body {
+	color: white;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  
+  .container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    
+    section {
+      position: relative;
+      padding: 5em;
+      background: linear-gradient(50deg,#ff4169 0,#7c26f8 100%);
+      color: white;
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+      
+      /* Styling for Pseudo-Elements */
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        pointer-events: none;
+      }
+      
+      /* Double Diagonal Separator */
+      &.diagonalseparator {
+        z-index: 1;
+        padding-top: 2em;
+        background: white;
+        color: #be35b0;
+        
+        &::before,
+        &::after {
+          top:0;
+          left:-25%;
+          z-index:-1;
+          width:150%;
+          height:75%;
+          background:inherit;
+          -webkit-transform:rotate(-4deg);
+          transform:rotate(-4deg);
+          -webkit-transform-origin:0 0;
+          transform-origin:0 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
