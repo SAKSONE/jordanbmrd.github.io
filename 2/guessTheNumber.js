@@ -11,7 +11,7 @@ function guessTheNumber(max){
 		var trys = 0;
 		console.log(number);
 
-		if(ask != number){
+		while(ask != number){
 			trys++;
 			if (ask < number) {
 				ask = prompt("C'est plus !");
