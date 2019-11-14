@@ -14,10 +14,10 @@ function guessTheNumber(max){
 		while(ask != number){
 			trys++;
 			if (ask < number) {
-				ask = prompt("C'est plus !");
+				ask = parseInt(prompt("C'est plus !"));
 			}
 			else if(ask > number) {
-				ask = prompt("C'est moins !");
+				ask = parseInt(prompt("C'est moins !"));
 			}
 		}
 		alert("Bravo ! Le nombre était " + number + ".\nVous avez fait " + trys + " essais faux.");
