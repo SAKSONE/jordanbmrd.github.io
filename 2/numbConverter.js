@@ -39,7 +39,7 @@ function convert(number){
 
 			result = resultCentaine + ' ' + resultDizaine + ' ' + resultUnite;
 
-			result = result.replace(" undefined", "");
+			result = result.replace("undefined", "");
 			result = result.replace("undefined dix un", "onze");
 			result = result.replace("undefined dix deux", "douze");
 			result = result.replace("undefined dix trois", "treize");
