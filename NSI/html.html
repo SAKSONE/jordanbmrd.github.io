@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Le langage de programmation HTML</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="./css/stylehtml.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Space+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<nav class="navigationbar">
+		<ul class="navlist">
+			<li>
+				<a href="./index.html">Accueil</a>
+			</li>
+			<li>
+				<a href="./html.html" class="active">html</a>
+			</li>
+			<li>
+				<a href="./css.html">css</a>
+			</li>
+			<li>
+				<a href="./js.html">javascript</a>
+			</li>
+			<li>
+				<a href="./php.html">php</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="navbackground"></div>
+
+	<div class="htmllogo">
+		<img src="./img/logohtml.png" alt="HTML" width="300">
+	</div>
+	<div id="content">
+		<p>
+			&emsp;&emsp;HTML (HyperText Markup Language) n'est pas un langage de programmation : c'est un langage de balisage qui sert à indiquer au navigateur comment structurer les pages web visitées. Il peut être aussi compliqué ou aussi simple que le développeur web souhaite qu'il soit. Le HTML se compose d'une série d'éléments avec lesquels vous pouvez encadrer, envelopper ou baliser différentes parties du contenu pour les faire apparaître ou agir d'une certaine manière. Des balises encadrantes peuvent transformer une petite partie de contenu en un lien vers une autre page sur le Web, mettre des mots en italique, etc.<br>
+			Par exemple, prenons la phrase suivante :
+		</p>
+		<div class="code">
+			<p>
+				<span class="indexcode">1 |</span> Mon chat est très grincheux
+			</p>
+		</div>
+		<p>
+			Si nous voulons que cette ligne reste en l'état, nous pouvons dire qu'il s'agit d'un paragraphe en l'enveloppant d'un élément paragraphe (&lt;p&gt;) :
+		</p>
+		<div class="code">
+			<p>
+				<span class="indexcode">1 |</span> &lt;<span class="partcode">p</span>&gt;Mon chat est très grincheux&lt;/<span class="partcode">p</span>&gt;
+			</p>
+		</div>
+
+		<div align="center" class="continuercours">
+			<a href="https://developer.mozilla.org/fr/docs/Apprendre/HTML/Introduction_%C3%A0_HTML/Getting_started" target="_blank">Accéder à la suite du cours</a>
+			<br><br>
+			<hr width="50%">
+		</div>
+
+		<p>Une page HTML se structure toujours de cette façon :</p>
+		<div class="code">
+			<p>
+				<span class="indexcode">1 |</span> &lt;!<span class="partcode">DOCTYPE</span> html&gt;<br>
+				<span class="indexcode">2 |</span> &lt;<span class="partcode">html</span>&gt;<br>
+				<span class="indexcode">3 |</span> &emsp;&emsp;&lt;<span class="partcode">head</span>&gt;<br>
+				<span class="indexcode">4 |</span> &emsp;&emsp;&emsp;&emsp;&lt;<span class="partcode">meta</span> charset="utf-8"&gt;<br>
+				<span class="indexcode">5 |</span> &emsp;&emsp;&emsp;&emsp;&lt;<span class="partcode">title</span>&gt;Titre&lt;/<span class="partcode">title</span>&gt;<br>
+				<span class="indexcode">6 |</span> &emsp;&emsp;&lt;/<span class="partcode">head</span>&gt;<br>
+				<span class="indexcode">7 |</span> &emsp;&emsp;&lt;<span class="partcode">body</span>&gt;<br>
+				<span class="indexcode">8 |</span><br>
+				<span class="indexcode">9 |</span> &emsp;&emsp;&lt;/<span class="partcode">body</span>&gt;<br>
+				<span class="indexcode">10 |</span> &lt;/<span class="partcode">html</span>&gt;
+			</p>
+		</div>
+
+		<table class="descbalises">
+			<tr style="font-weight: bold;">
+				<td style="background-color: #f9690e;">Balise</td>
+				<td style="background-color: #f9690e;">Description</td>
+			</tr>
+			<tr style="background-color: #f3f1ef;">
+				<td>&lt;html&gt;</td>
+				<td>Balise principale</td>
+			</tr>
+			<tr style="background-color: #e8e8e8;">
+				<td>&lt;head&gt;</td>
+				<td>En-tête de la page</td>
+			</tr>
+			<tr style="background-color: #f3f1ef;">
+				<td>&lt;body&gt;</td>
+				<td>Corps de la page</td>
+			</tr>
+		</table>
+</body>
+</html>
