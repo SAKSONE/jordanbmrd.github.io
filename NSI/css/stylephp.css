@@ -86,6 +86,10 @@ body{
 .partcode{
 	color: #e74c3c;
 }
+.greencode{
+	color: #2ecc71;
+}
+
 footer{
 	background-color: #00b5cc;
 	text-align: center;
