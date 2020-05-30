@@ -53,3 +53,56 @@ footer{
 footer a{
 	color: #08a0e9;
 }
+
+
+/* Switch */
+.switch{
+	padding: 10px 10px 10px 30px;
+}
+.toggle_bar {
+	text-align: center;
+	border: 1px solid rgba(0, 0, 0, .1);
+	background: rgba(300, 300, 300, .1);
+	width: 70px;
+	display: block;
+	box-sizing: border-box;
+	height: 30px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.toggle_bar .toggle_square {
+	border-radius: 4px;
+	transition: left 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), background 0.2s ease;
+	background: rgba(218, 68, 83, 1);
+	position: absolute;
+	top: 0;
+	left: 40px;
+	width: 30px;
+	height: 100%;
+	box-shadow: 0 4px 16px 8px rgba(0, 0, 0, .15);
+}
+.toggle_bar .toggle_square:before {
+	content: "\d7";
+	display: block;
+	color: white;
+	will-change: content;
+	transition: content 0.2s ease;
+	line-height: 30px;
+	text-align: center;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.contract_toggle input[type=checkbox] {
+	display: none;
+	position: absolute;
+	appearance: none;
+}
+.contract_toggle input[type=checkbox]:checked ~ .toggle_bar .toggle_square {
+	background: rgba(55, 188, 155, 1);
+	left: 0;
+}
+.contract_toggle input[type=checkbox]:checked ~ .toggle_bar .toggle_square:before {
+	content: "✓";
+}
