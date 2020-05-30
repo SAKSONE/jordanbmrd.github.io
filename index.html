@@ -11,7 +11,16 @@
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="https://kit.fontawesome.com/bc78ea3423.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="body">
+	<div class="switch">
+  		<label for="contractToggle" class="contract_toggle app-title">
+  			Night mode<br><br>
+			<input type="checkbox" id="contractToggle" name="contract_toggle"/>
+			<span class="toggle_bar">
+				<span class="toggle_square"></span>
+			</span>
+		</label>
+	</div>
 	<div class="container">
 		<div>
 			<p class="title" data-aos="fade-up-left">Welcome,</p>
@@ -21,12 +30,12 @@
 		<hr class="divider">
 
 		<p class="app-title" data-aos="fade-up" align="center">THE WEATHER APP</p>
-		<div class="iphone-mockup" data-aos="fade-left"></div>
+		<div class="iphone-mockup" id="iphone" data-aos="fade-left"></div>
 
 		<hr class="divider">
 
 		<p class="app-title" data-aos="fade-up" align="center">CALCULATOR</p>
-		<a href="./calculator/index.html" class="mac-mockup" data-aos="fade-right"></a>
+		<a href="./calculator/index.html" class="mac-mockup" id="mac" data-aos="fade-right"></a>
 	</div>
 
 	<footer>
@@ -40,5 +49,39 @@
 
 	<script>
 		AOS.init();
+
+		var nightMode = localStorage.getItem("nightMode");
+
+		const enableNightMode = () => {
+			document.getElementById("body").style.backgroundColor = "#2e3131";
+			document.getElementById("body").style.color = "white";
+			document.getElementById("iphone").style.backgroundImage = "url('./img/iphone-night.jpg')";
+			document.getElementById("mac").style.backgroundImage = "url('./img/mac-night.jpg')";
+			localStorage.setItem("nightMode", "enabled");
+		};
+
+		const disableNightMode = () => {
+			document.getElementById("body").style.backgroundColor = "#F3F3F3";
+			document.getElementById("body").style.color = "black";
+			document.getElementById("iphone").style.backgroundImage = "url('./img/iphone.jpg')";
+			document.getElementById("mac").style.backgroundImage = "url('./img/mac.jpg')";
+			localStorage.setItem("nightMode", null);
+		};
+
+		var checkbox = document.getElementById("contractToggle");
+
+		if (nightMode === "enabled"){
+			enableNightMode();
+			checkbox.checked = true;
+		}
+
+		checkbox.addEventListener('change', () => {
+			var nightMode = localStorage.getItem("nightMode");
+			if (nightMode !== "enabled"){
+				enableNightMode();
+			} else {
+				disableNightMode();
+			}
+		});
 	</script>
 </body>
