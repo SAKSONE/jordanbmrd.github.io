@@ -61,6 +61,15 @@
 		text-align: left;
 	}
 
+	.discovercontent ul {
+		flex-direction: column;
+	}
+	.discovercontent ul li {
+		width: 230px !important;
+		margin: auto !important;
+		margin-bottom: 30px !important;
+	}
+
 	.emailcontent div {
 		flex-direction: column;
 		align-items: center;
@@ -195,6 +204,53 @@
 
 /*
 
+	DÉCOUVRIR
+
+*/
+
+
+
+.discovercontent {
+	background-color: white;
+	padding: 8% 0 12% 0;
+}
+.discovercontent h3 {
+	font-family: 'Gordita', sans-serif;
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 6%;
+}
+.discovercontent ul {
+	width: 80%;
+	margin: auto;
+	list-style-type: none;
+
+	display: flex;
+	justify-content: space-around;
+}
+.discovercontent ul li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+
+	transition-duration: 0.5s;
+	padding: 15px;
+	
+	border-radius: 10px;
+	background: linear-gradient(145deg, #f8f8f8, #d1d1d1);
+	box-shadow:  23px 23px 46px #c5c5c5, 
+             -23px -23px 46px #ffffff;
+}
+.discovercontent ul li:hover {
+	transform: scale(1.2);
+	transition-duration: 0.5s;
+}
+
+
+
+/*
+
 	EMAIL
 
 */
@@ -202,12 +258,12 @@
 
 
 .emailcontent {
-	background-color: white;
+	background-color: #3F3BC8;
 	flex-direction: column;
 	text-align: center;
 }
 .emailcontent h3 {
-	color: black;
+	color: white;
 	font-size: 30px;
 	margin-bottom: 50px;
 }
@@ -221,12 +277,14 @@
 .emailcontent div p {
 	font-style: italic;
 	margin-top: 7px;
+	color: white;
 }
 .emailcontent div p, .emailcontent div a {
 	font-family: 'Gordita', sans-serif;
 	font-size: 20px;
 }
-.emailcontent div a {
+.gradientButton {
+	font-family: 'Gordita', sans-serif;
 	padding-top: 15px;
 	text-decoration: none;
 	width: 200px;
@@ -248,13 +306,13 @@
     background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
     box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
 }
-.emailcontent div a:hover {
+.gradientButton:hover {
 	background-position: 100% 0;
     -moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
-.emailcontent div a:focus {
+.gradientButton:focus {
 	outline: none;
 }
