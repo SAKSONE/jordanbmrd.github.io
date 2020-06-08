@@ -37,7 +37,8 @@
 		align-items: center !important;
 	}
 	.content .title {
-		margin: 0px 5% 0px 5%;
+		width: 80vw;
+		margin: auto;
 	}
 	.content p {
 		text-align: center !important;
@@ -53,7 +54,7 @@
 		height: 500px;
 	}
 	.videocontent iframe {
-		width: 80%;
+		width: 80vw;
 	}
 	.videocontent div p {
 		text-align: left;
