@@ -1,0 +1,183 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+	font-family: 'Gordita';
+	src: url('../Gordita.woff') format('woff');
+}
+.underline {
+	text-decoration: underline;
+}
+
+
+
+/*
+
+	NAVBAR
+
+*/
+
+
+
+.navbar ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	width: 100vh;
+	margin: 10px;
+}
+.navbar ul li {
+	margin: 30px;
+}
+.navbar ul li a {
+	text-decoration: none;
+	font-family: sans-serif;
+	color: white;
+	font-size: 30px;
+}
+.navbar ul li a:hover{
+	text-decoration: underline;
+}
+.navbar nav{
+	position: absolute;
+}
+
+
+
+/*
+
+	FIRST CONTENT
+
+*/
+
+
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+.content .title {
+	font-family: 'Gordita', sans-serif;
+	font-size: 50px;
+	margin-bottom: 30px;
+}
+.content p {
+	font-family: sans-serif;
+	font-size: 20px;
+	width: 70%;
+	text-align: right;
+	margin-bottom: 3%;
+}
+.content .langagesutilises ol li {
+	font-family: sans-serif;
+}
+.content .langagesutilises {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5%;
+}
+
+
+
+/*
+
+	VIDEO
+
+*/
+
+
+
+.videocontent, .emailcontent {
+	display: flex;
+	justify-content: space-around;
+	background-color: #3F3BC8;
+	padding: 10%;
+}
+.videocontent h3, .emailcontent h3 {
+	font-family: 'Gordita', sans-serif;
+	font-size: 40px;
+	color: white;
+}
+.videocontent p {
+	text-align: right;
+	font-family: sans-serif;
+	color: white;
+	opacity: 0.8;
+	font-style: italic;
+}
+.videocontent p a {
+	color: white;
+	text-decoration: none;
+}
+
+
+
+/*
+
+	EMAIL
+
+*/
+
+
+
+.emailcontent {
+	background-color: white;
+	flex-direction: column;
+	text-align: center;
+}
+.emailcontent h3 {
+	color: black;
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+.emailcontent div {
+	display: flex;
+	justify-content: space-around;
+	width: 50%;
+	text-align: center;
+	margin: auto;
+}
+.emailcontent div p {
+	font-style: italic;
+	margin-top: 7px;
+}
+.emailcontent div p, .emailcontent div a {
+	font-family: 'Gordita', sans-serif;
+	font-size: 20px;
+}
+.emailcontent div a {
+	padding-top: 15px;
+	text-decoration: none;
+	width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    height: 35px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+.emailcontent div a:hover {
+	background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.emailcontent div a:focus {
+	outline: none;
+}
