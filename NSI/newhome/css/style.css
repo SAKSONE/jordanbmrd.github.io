@@ -38,7 +38,7 @@
 	}
 	.content .title {
 		margin: auto !important;
-		font-size: 35px;
+		font-size: 35px !important;
 	}
 	.content p {
 		text-align: center !important;
