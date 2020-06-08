@@ -52,6 +52,9 @@
 		justify-content: space-around;
 		height: 500px;
 	}
+	.videocontent iframe {
+		width: 80%;
+	}
 	.videocontent div p {
 		text-align: left;
 	}
