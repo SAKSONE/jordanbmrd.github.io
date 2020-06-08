@@ -13,6 +13,63 @@
 
 
 /*
+	
+	Media Queries (Responsive)
+
+*/
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 1080px) {
+	.navbar {
+		display: none;
+	}
+	.phone-navbar {
+		display: block;
+	}
+
+	.videocontent {
+		flex-direction: column;
+		justify-content: space-around;
+		height: 500px;
+	}
+	.videocontent div p {
+		text-align: left;
+	}
+
+	.emailcontent div {
+		flex-direction: column;
+		align-items: center;
+	}
+	.emailcontent div p {
+		margin-bottom: 30px;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1080px) {
+	.navbar {
+		display: block;
+	}
+	.phone-navbar {
+		display: none;
+	}
+}
+
+
+
+/*
 
 	NAVBAR
 
@@ -20,23 +77,30 @@
 
 
 
-.navbar ul {
+.phone-navbar ul li a {
+	color: black !important;
+	font-size: 24px !important;
+}
+.phone-navbar ul {
+	width: 90% !important;
+}
+.navbar ul, .phone-navbar ul {
 	list-style-type: none;
 	display: flex;
 	justify-content: space-around;
 	width: 100vh;
 	margin: 10px;
 }
-.navbar ul li {
+.navbar ul li, .phone-navbar ul li {
 	margin: 30px;
 }
-.navbar ul li a {
+.navbar ul li a, .phone-navbar ul li a {
 	text-decoration: none;
 	font-family: sans-serif;
 	color: white;
 	font-size: 30px;
 }
-.navbar ul li a:hover{
+.navbar ul li a:hover, .phone-navbar ul li a:hover{
 	text-decoration: underline;
 }
 .navbar nav{
