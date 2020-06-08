@@ -37,8 +37,8 @@
 		align-items: center !important;
 	}
 	.content .title {
-		width: 80vw !important;
 		margin: auto !important;
+		font-size: 35px;
 	}
 	.content p {
 		text-align: center !important;
