@@ -283,6 +283,10 @@
 	font-family: 'Gordita', sans-serif;
 	font-size: 20px;
 }
+.emailcontent div a {
+	padding-top: 10px !important;
+	width: 150px !important;
+}
 .gradientButton {
 	font-family: 'Gordita', sans-serif;
 	padding-top: 15px;
