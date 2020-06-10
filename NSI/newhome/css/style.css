@@ -15,7 +15,6 @@
 /*
 	
 	Media Queries (Responsive)
-
 */
 
 
@@ -61,9 +60,6 @@
 		text-align: left;
 	}
 
-	.discovercontent ul {
-		flex-direction: column;
-	}
 	.discovercontent ul li {
 		width: 230px !important;
 		margin: auto !important;
@@ -92,9 +88,7 @@
 
 
 /*
-
 	NAVBAR
-
 */
 
 
@@ -132,9 +126,7 @@
 
 
 /*
-
 	FIRST CONTENT
-
 */
 
 
@@ -170,9 +162,7 @@
 
 
 /*
-
 	VIDEO
-
 */
 
 
@@ -203,9 +193,7 @@
 
 
 /*
-
 	DÉCOUVRIR
-
 */
 
 
@@ -227,6 +215,7 @@
 
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 .discovercontent ul li {
 	display: flex;
@@ -250,7 +239,6 @@
 
 
 /*
-
 	HTML
 	
 */
@@ -328,9 +316,7 @@
 
 
 /*
-
 	EMAIL
-
 */
 
 
