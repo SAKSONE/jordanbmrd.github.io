@@ -22,19 +22,19 @@
 				</li>
 				<li>—</li>
 				<li>
-					<a href="#">HTML</a>
+					<a onclick="htmlClicked();" href="#htmlcontent" id="html-btn" data-scroll="on">HTML</a>
 				</li>
 				<li>—</li>
 				<li>
-					<a href="#">CSS</a>
+					<a onclick="cssClicked();" href="#csscontent" id="css-btn" data-scroll="on">CSS</a>
 				</li>
 				<li>—</li>
 				<li>
-					<a href="#">JS</a>
+					<a onclick="jsClicked();" href="#jscontent" id="js-btn" data-scroll="on">JS</a>
 				</li>
 				<li>—</li>
 				<li>
-					<a href="#">PHP</a>
+					<a onclick="phpClicked();" href="#phpcontent" id="php-btn" data-scroll="on">PHP</a>
 				</li>
 			</ul>
 		</nav>
@@ -48,16 +48,16 @@
 					<a href="#">Accueil</a>
 				</li>
 				<li>
-					<a href="#">HTML</a>
+					<a onclick="htmlClicked();" href="#htmlcontent" id="html-btn" data-scroll="on">HTML</a>
 				</li>
 				<li>
-					<a href="#">CSS</a>
+					<a onclick="cssClicked();" href="#csscontent" id="css-btn" data-scroll="on">CSS</a>
 				</li>
 				<li>
-					<a href="#">JS</a>
+					<a onclick="jsClicked();" href="#jscontent" id="js-btn" data-scroll="on">JS</a>
 				</li>
 				<li>
-					<a href="#">PHP</a>
+					<a onclick="phpClicked();" href="#phpcontent" id="php-btn" data-scroll="on">PHP</a>
 				</li>
 			</ul>
 		</nav>
@@ -119,7 +119,7 @@
 		</ul>
 	</div>
 	
-	<div class="htmlcontent">
+	<div id="htmlcontent">
 		<h3>HTML</h3>
 		<br>
 		<p>
@@ -176,7 +176,7 @@
 		</table>
 	</div>
 	
-	<div class="csscontent">
+	<div id="csscontent">
 		<h3>CSS</h3>
 		<br>
 		<p align="left">
@@ -196,7 +196,7 @@
 		</p>
 	</div>
 	
-	<div class="jscontent">
+	<div id="jscontent">
 		<h3>JavaScript</h3>
 		<br>
 		<p>
@@ -212,8 +212,8 @@
 		</p>
 	</div>
 	
-	<div class="phpcontent">
-		<h3>Le PHP</h3>
+	<div id="phpcontent">
+		<h3>PHP</h3>
 		<br>
 		<p>
 			&emsp;&emsp;PHP (officiellement, ce sigle est un acronyme récursif pour PHP Hypertext Preprocessor) est un langage de scripts généraliste et Open Source, spécialement conçu pour le développement d'applications web. Il peut être intégré facilement au HTML.
@@ -248,28 +248,31 @@
 		</div>
 	</div>
 
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- for scrolling element animation -->
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script> <!-- for manual scroll animation -->
 	<script type="text/javascript">
-		AOS.init();
-	</script>
-	<script type="text/javascript">
-		# Discover
-		
-		var showed = ""
+		AOS.init(); // AOS initialization
+		var scroll = new SmoothScroll('a[data-scroll="on"]'); //  Manual scroll animation initialization
+
+		// Discover
 		
 		const htmlButton = document.getElementById("htmlButton");
-		const htmlContent = document.getElementsByClassName("htmlcontent")[0];
+		const htmlContent = document.getElementById("htmlcontent");
 		
 		const cssButton = document.getElementById("cssButton");
-		const cssContent = document.getElementsByClassName("csscontent")[0];
+		const cssContent = document.getElementById("csscontent");
 		
 		const jsButton = document.getElementById("jsButton");
-		const jsContent = document.getElementsByClassName("jscontent")[0];
+		const jsContent = document.getElementById("jscontent");
 		
 		const phpButton = document.getElementById("phpButton");
-		const phpContent = document.getElementsByClassName("phpcontent")[0];
+		const phpContent = document.getElementById("phpcontent");
 		
-		htmlButton.addEventListener('click', function() {
+		// Show or hide
+
+		var showed = "";
+
+		function htmlClicked() {
 			if (!showed) {
 				htmlContent.style.display = 'block';
 				showed = "html";
@@ -285,9 +288,9 @@
 				phpContent.style.display = 'none';
 				showed = "html";
 			}
-		});
-		
-		cssButton.addEventListener('click', function() {
+		}
+
+		function cssClicked() {
 			if (!showed) {
 				cssContent.style.display = 'block';
 				showed = "css";
@@ -303,9 +306,9 @@
 				phpContent.style.display = 'none';
 				showed = "css";
 			}
-		});
-		
-		jsButton.addEventListener('click', function() {
+		}
+
+		function jsClicked() {
 			if (!showed) {
 				jsContent.style.display = 'block';
 				showed = "js";
@@ -321,9 +324,9 @@
 				phpContent.style.display = 'none';
 				showed = "js";
 			}
-		});
-		
-		phpButton.addEventListener('click', function() {
+		}
+
+		function phpClicked() {
 			if (!showed) {
 				phpContent.style.display = 'block';
 				showed = "php";
@@ -339,7 +342,12 @@
 				phpContent.style.display = 'block';
 				showed = "php";
 			}
-		});
+		}
+
+		htmlButton.addEventListener('click', function() { htmlClicked(); });
+		cssButton.addEventListener('click', function() { cssClicked(); });
+		jsButton.addEventListener('click', function() { jsClicked(); });
+		phpButton.addEventListener('click', function() { phpClicked(); });
 	</script>
 </body>
 </html>

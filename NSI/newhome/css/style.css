@@ -6,6 +6,14 @@
 	font-family: 'Gordita';
 	src: url('../Gordita.woff') format('woff');
 }
+img {
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
 .underline {
 	text-decoration: underline;
 }
@@ -200,7 +208,7 @@
 
 .discovercontent {
 	background-color: white;
-	padding: 8% 0 12% 0;
+	padding: 8% 0 8% 0;
 }
 .discovercontent h3 {
 	font-family: 'Gordita', sans-serif;
@@ -245,7 +253,7 @@
 
 
 
-.htmlcontent, .csscontent, .jscontent, .phpcontent {
+#htmlcontent, #csscontent, #jscontent, #phpcontent {
 	display: none;
 	margin: auto;
 	width: 70%;
@@ -256,10 +264,10 @@
 	-moz-box-shadow: 5px 5px 19px 0px rgba(0,0,0,0.46);
 	box-shadow: 5px 5px 19px 0px rgba(0,0,0,0.46);
 }
-.htmlcontent h3, .csscontent h3, .jscontent h3, .phpcontent h3 {
+#htmlcontent h3, #csscontent h3, #jscontent h3, #phpcontent h3 {
 	font-family: 'Gordita', sans-serif;
 }
-.htmlcontent p, .csscontent p, .csscontent ul li, .jscontent p, .jscontent div, .phpcontent p {
+#htmlcontent p, #csscontent p, #csscontent ul li, #jscontent p, #jscontent div, #phpcontent p {
 	font-family: sans-serif;
 }
 .code {
@@ -306,7 +314,7 @@
 
 
 
-.csscontent .contentlist{
+#csscontent .contentlist{
 	margin: auto;
 	width: 70%;
 	margin-top: 15px;
