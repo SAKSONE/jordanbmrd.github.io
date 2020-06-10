@@ -102,19 +102,19 @@
 		<ul data-aos="fade-up">
 			<li>
 				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" width="150"><br>
-				<button id="htmlButton" class="gradientButton">En savoir +</button>
+				<a id="htmlButton" href="#discover" class="gradientButton">En savoir +</a>
 			</li>
 			<li>
 				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" width="110"><br><br>
-				<button id="cssButton" class="gradientButton">En savoir +</button>
+				<a id="cssButton" href="#discover" class="gradientButton">En savoir +</a>
 			</li>
 			<li>
 				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png" width="150"><br>
-				<button id="jsButton" class="gradientButton">En savoir +</button>
+				<a id="jsButton" href="#discover" class="gradientButton">En savoir +</a>
 			</li>
 			<li>
 				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1024px-PHP-logo.svg.png" width="150"><br>
-				<button id="phpButton" class="gradientButton">En savoir +</button>
+				<a id="phpButton" href="#discover" class="gradientButton">En savoir +</a>
 			</li>
 		</ul>
 		<div id="discover"></div>
@@ -278,10 +278,6 @@
 				htmlContent.style.display = 'block';
 				showed = "html";
 			}
-			else if (showed === "html") {
-				htmlContent.style.display = 'none';
-				showed = "";
-			}
 			else {
 				htmlContent.style.display = 'block';
 				cssContent.style.display = 'none';
@@ -295,10 +291,6 @@
 			if (!showed) {
 				cssContent.style.display = 'block';
 				showed = "css";
-			}
-			else if (showed === "css") {
-				cssContent.style.display = 'none';
-				showed = "";
 			}
 			else {
 				htmlContent.style.display = 'none';
@@ -314,10 +306,6 @@
 				jsContent.style.display = 'block';
 				showed = "js";
 			}
-			else if (showed === "js") {
-				jsContent.style.display = 'none';
-				showed = "";
-			}
 			else {
 				htmlContent.style.display = 'none';
 				cssContent.style.display = 'none';
@@ -331,10 +319,6 @@
 			if (!showed) {
 				phpContent.style.display = 'block';
 				showed = "php";
-			}
-			else if (showed === "php") {
-				phpContent.style.display = 'none';
-				showed = "";
 			}
 			else {
 				htmlContent.style.display = 'none';
