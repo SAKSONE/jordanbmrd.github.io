@@ -251,6 +251,84 @@
 
 /*
 
+	HTML
+	
+*/
+
+
+
+.htmlcontent, .csscontent, .jscontent, .phpcontent {
+	display: none;
+	margin: auto;
+	width: 70%;
+	
+	padding: 30px;
+	margin-bottom: 5%;
+	-webkit-box-shadow: 5px 5px 19px 0px rgba(0,0,0,0.46);
+	-moz-box-shadow: 5px 5px 19px 0px rgba(0,0,0,0.46);
+	box-shadow: 5px 5px 19px 0px rgba(0,0,0,0.46);
+}
+.htmlcontent h3, .csscontent h3, .jscontent h3, .phpcontent h3 {
+	font-family: 'Gordita', sans-serif;
+}
+.htmlcontent p, .csscontent p, .csscontent ul li, .jscontent p, .jscontent div, .phpcontent p {
+	font-family: sans-serif;
+}
+.code {
+	display: inline-block;
+	background-color: #e8ecf1;
+	padding: 20px;
+	/*border-radius: 15px;*/
+	border-left: 8px solid #19b5fe;
+
+	width: 80%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.indexcode {
+	color: lightgray;
+}
+.partcode {
+	color: #e74c3c;
+}
+.greencode {
+	color: #2ecc71;
+}
+.descbalises {
+	border: 2px solid black;
+	border-collapse: separate;
+	border-spacing: 3px;
+	width: 50%;
+	margin: auto;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+.descbalises tr td {
+	padding: 15px;
+	font-family: sans-serif;
+}
+
+
+
+/*
+	
+	CSS
+	
+*/
+
+
+
+.csscontent .contentlist{
+	margin: auto;
+	width: 70%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+
+
+/*
+
 	EMAIL
 
 */
@@ -289,7 +367,6 @@
 }
 .gradientButton {
 	font-family: 'Gordita', sans-serif;
-	padding-top: 15px;
 	text-decoration: none;
 	width: 200px;
     font-size: 16px;

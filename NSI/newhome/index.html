@@ -17,23 +17,23 @@
 	<div class="phone-navbar">
 		<nav data-aos="fade-down">
 			<ul>
-				<li>
+				<li id="acc-btn">
 					<a href="#">ACC</a>
 				</li>
 				<li>—</li>
-				<li>
+				<li id="html-btn">
 					<a href="#">HTML</a>
 				</li>
 				<li>—</li>
-				<li>
+				<li id="css-btn">
 					<a href="#">CSS</a>
 				</li>
 				<li>—</li>
-				<li>
+				<li id="js-btn">
 					<a href="#">JS</a>
 				</li>
 				<li>—</li>
-				<li>
+				<li id="php-btn">
 					<a href="#">PHP</a>
 				</li>
 			</ul>
@@ -44,19 +44,19 @@
 	<div class="navbar">
 		<nav>
 			<ul data-aos="fade-down">
-				<li>
+				<li id="acc-btn">
 					<a href="#">Accueil</a>
 				</li>
-				<li>
+				<li id="html-btn">
 					<a href="#">HTML</a>
 				</li>
-				<li>
+				<li id="css-btn">
 					<a href="#">CSS</a>
 				</li>
-				<li>
+				<li id="js-btn">
 					<a href="#">JS</a>
 				</li>
-				<li>
+				<li id="php-btn">
 					<a href="#">PHP</a>
 				</li>
 			</ul>
@@ -102,21 +102,142 @@
 		<ul data-aos="fade-up">
 			<li>
 				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" width="150"><br>
-				<a href="#" class="gradientButton">Faire un tour</a>
+				<button id="htmlButton" class="gradientButton">En savoir +</button>
 			</li>
 			<li>
 				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" width="110"><br><br>
-				<a href="#" class="gradientButton">Faire un tour</a>
+				<button id="cssButton" class="gradientButton">En savoir +</button>
 			</li>
 			<li>
 				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png" width="150"><br>
-				<a href="#" class="gradientButton">Faire un tour</a>
+				<button id="jsButton" class="gradientButton">En savoir +</button>
 			</li>
 			<li>
 				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1024px-PHP-logo.svg.png" width="150"><br>
-				<a href="#" class="gradientButton">Faire un tour</a>
+				<button id="phpButton" class="gradientButton">En savoir +</button>
 			</li>
 		</ul>
+	</div>
+	
+	<div class="htmlcontent">
+		<h3>HTML</h3>
+		<br>
+		<p>
+			&emsp;&emsp;HTML (<em>HyperText Markup Language</em>) n'est pas un langage de programmation : c'est un langage de balisage qui sert à indiquer au navigateur comment structurer les pages web visitées. Il peut être aussi compliqué ou aussi simple que le développeur web souhaite qu'il soit. Le HTML se compose d'une série d'éléments avec lesquels vous pouvez encadrer, envelopper ou baliser différentes parties du contenu pour les faire apparaître ou agir d'une certaine manière. Des balises encadrantes peuvent transformer une petite partie de contenu en un lien vers une autre page sur le Web, mettre des mots en italique, etc.<br>
+			Par exemple, prenons la phrase suivante :
+		</p>
+		<div class="code">
+			<p>
+				<span class="indexcode">1 |</span> Mon chat est très grincheux
+			</p>
+		</div>
+		<p>
+			Si nous voulons que cette ligne reste en l'état, nous pouvons dire qu'il s'agit d'un paragraphe en l'enveloppant d'un élément paragraphe (&lt;<span class="partcode">p</span>&gt;) :
+		</p>
+		<div class="code">
+			<p>
+				<span class="indexcode">1 |</span> &lt;<span class="partcode">p</span>&gt;Mon chat est très grincheux&lt;/<span class="partcode">p</span>&gt;
+			</p>
+		</div>
+		
+		<p>Une page HTML se structure toujours de cette façon :</p>
+		<div class="code">
+			<p>
+				<span class="indexcode">1 |</span> &lt;!<span class="partcode">DOCTYPE</span> html&gt;<br>
+				<span class="indexcode">2 |</span> &lt;<span class="partcode">html</span>&gt;<br>
+				<span class="indexcode">3 |</span> &emsp;&emsp;&lt;<span class="partcode">head</span>&gt;<br>
+				<span class="indexcode">4 |</span> &emsp;&emsp;&emsp;&emsp;&lt;<span class="partcode">meta</span> <span class="greencode">charset</span>="utf-8"&gt;<br>
+				<span class="indexcode">5 |</span> &emsp;&emsp;&emsp;&emsp;&lt;<span class="partcode">title</span>&gt;Titre&lt;/<span class="partcode">title</span>&gt;<br>
+				<span class="indexcode">6 |</span> &emsp;&emsp;&lt;/<span class="partcode">head</span>&gt;<br>
+				<span class="indexcode">7 |</span> &emsp;&emsp;&lt;<span class="partcode">body</span>&gt;<br>
+				<span class="indexcode">8 |</span><br>
+				<span class="indexcode">9 |</span> &emsp;&emsp;&lt;/<span class="partcode">body</span>&gt;<br>
+				<span class="indexcode">10 |</span> &lt;/<span class="partcode">html</span>&gt;
+			</p>
+		</div>
+
+		<table class="descbalises">
+			<tr style="font-weight: bold;">
+				<td style="background-color: #f9690e;">Balise</td>
+				<td style="background-color: #f9690e;">Description</td>
+			</tr>
+			<tr style="background-color: #f3f1ef;">
+				<td>&lt;html&gt;</td>
+				<td>Balise principale</td>
+			</tr>
+			<tr style="background-color: #e8e8e8;">
+				<td>&lt;head&gt;</td>
+				<td>En-tête de la page</td>
+			</tr>
+			<tr style="background-color: #f3f1ef;">
+				<td>&lt;body&gt;</td>
+				<td>Corps de la page</td>
+			</tr>
+		</table>
+	</div>
+	
+	<div class="csscontent">
+		<h3>CSS</h3>
+		<br>
+		<p align="left">
+			Les <b>CSS</b>, <em>Cascading Style Sheets</em> (feuilles de styles en cascade), servent à mettre en forme des documents web, type page HTML ou XML. Par l'intermédiaire de propriétés d'apparence (couleurs, bordures, polices, etc.) et de placement (largeur, hauteur, côte à côte, dessus-dessous, etc.), le rendu d'une page web peut être intégralement modifié sans aucun code supplémentaire dans la page web. Les feuilles de styles ont d'ailleurs pour objectif principal de dissocier le contenu de la page de son apparence visuelle. Ceci permet :
+		</p>
+		<div class="contentlist">
+			<ul align="left">
+				<li>de ne pas répéter dans chaque page le même code de mise en forme</li>
+				<li>d'utiliser des styles génériques, avec des noms explicites (par exemple un style encadré pour du texte ou des images).</li>
+				<li>de pouvoir changer l'apparence d'un site web complet en ne modifiant qu'un seul fichier</li>
+				<li>de faciliter la lecture du code de la page</li>
+			</ul>
+		</div>
+		<p align="left">
+			La puissance et de l'intérêt des CSS peut être démontrée en modifiant radicalement l'apparence d'une page, sans changer son code HTML d'un iota... Bref les CSS permettent de gagner en productivité et en maintenabilité des sites web, tout en offrant des possibilités graphiques incontestables. Lorsqu'on se lance dans la conception de pages web, il faut apprendre les CSS !
+			<br><em>(Source: Wikipédia)</em>
+		</p>
+	</div>
+	
+	<div class="jscontent">
+		<h3>JavaScript</h3>
+		<br>
+		<p>
+			JavaScript (qui est souvent abrégé en « JS ») est un langage de script léger, orienté objet, principalement connu comme le langage de script des pages web. Mais il est aussi utilisé dans de nombreux environnements extérieurs aux navigateurs web tels que Node.js, Apache CouchDB voire Adobe Acrobat. Le code JavaScript est interprété ou compilé à la volée (JIT). C'est un langage à objets utilisant le concept de prototype, disposant d'un typage faible et dynamique qui permet de programmer suivant plusieurs paradigmes de programmation : fonctionnelle, impérative et orientée objet.
+		</p>
+		<br>
+		<p>
+			Pour importer un script dans sa page HTML, il utiliser cette balise:<br>
+			<div class="code">
+				<span class="indexcode">1 | </span>
+				&lt;<span class="partcode">script</span> <span class="greencode">type</span>="text/javascript" <span class="greencode">src</span>="script.js"&gt;&lt;/<span class="partcode">script</span>&gt;
+			</div>
+		</p>
+	</div>
+	
+	<div class="phpcontent">
+		<h3>Le PHP</h3>
+		<br>
+		<p>
+			&emsp;&emsp;PHP (officiellement, ce sigle est un acronyme récursif pour PHP Hypertext Preprocessor) est un langage de scripts généraliste et Open Source, spécialement conçu pour le développement d'applications web. Il peut être intégré facilement au HTML.
+
+			Bien... mais qu'est ce que cela veut dire ? Un exemple :
+			<div class="code">
+				<p>
+					<span class="indexcode">1 |</span> &lt;!<span class="partcode">DOCTYPE</span> html&gt;<br>
+					<span class="indexcode">2 |</span> &lt;<span class="partcode">html</span>&gt;<br>
+					<span class="indexcode">3 |</span> &emsp;&emsp;&lt;<span class="partcode">head</span>&gt;<br>
+					<span class="indexcode">4 |</span> &emsp;&emsp;&emsp;&emsp;&lt;<span class="partcode">meta</span> <span class="greencode">charset</span>="utf-8"&gt;<br>
+					<span class="indexcode">5 |</span> &emsp;&emsp;&emsp;&emsp;&lt;<span class="partcode">title</span>&gt;Exemple&lt;/<span class="partcode">title</span>&gt;<br>
+					<span class="indexcode">6 |</span> &emsp;&emsp;&lt;/<span class="partcode">head</span>&gt;<br>
+					<span class="indexcode">7 |</span> &emsp;&emsp;&lt;<span class="partcode">body</span>&gt;<br>
+					<span class="indexcode">8 |</span><br>
+					<span class="indexcode">9 |</span> &emsp;&emsp;&lt;?<span class="partcode">php</span><br>
+					<span class="indexcode">10 |</span> &emsp;&emsp;echo "Bonjour, je suis un script PHP"<br>
+					<span class="indexcode">11 |</span> &emsp;&emsp;?&gt;<br>
+					<span class="indexcode">12 |</span><br>
+					<span class="indexcode">13 |</span> &emsp;&emsp;&lt;/<span class="partcode">body</span>&gt;<br>
+					<span class="indexcode">14 |</span> &lt;/<span class="partcode">html</span>&gt;
+				</p>
+			</div>
+		</p>
 	</div>
 
 	<div class="emailcontent">
@@ -130,6 +251,104 @@
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script type="text/javascript">
 		AOS.init();
+		
+		# Navbar
+		
+		const accNav = document.getElementById("acc-btn");
+		const htmlNav = document.getElementById("html-btn");
+		const cssNav = document.getElementById("css-btn");
+		const jsNav = document.getElementById("js-btn");
+		const phpNav = document.getElementById("php-btn");
+		
+		
+		
+		# Discover
+		
+		var showed = ""
+		
+		const htmlButton = document.getElementById("htmlButton");
+		const htmlContent = document.getElementsByClassName("htmlcontent")[0];
+		
+		const cssButton = document.getElementById("cssButton");
+		const cssContent = document.getElementsByClassName("csscontent")[0];
+		
+		const jsButton = document.getElementById("jsButton");
+		const jsContent = document.getElementsByClassName("jscontent")[0];
+		
+		const phpButton = document.getElementById("phpButton");
+		const phpContent = document.getElementsByClassName("phpcontent")[0];
+		
+		htmlButton.addEventListener('click', function() {
+			if (!showed) {
+				htmlContent.style.display = 'block';
+				showed = "html";
+			}
+			else if (showed === "html") {
+				htmlContent.style.display = 'none';
+				showed = "";
+			}
+			else {
+				htmlContent.style.display = 'block';
+				cssContent.style.display = 'none';
+				jsContent.style.display = 'none';
+				phpContent.style.display = 'none';
+				showed = "html";
+			}
+		});
+		
+		cssButton.addEventListener('click', function() {
+			if (!showed) {
+				cssContent.style.display = 'block';
+				showed = "css";
+			}
+			else if (showed === "css") {
+				cssContent.style.display = 'none';
+				showed = "";
+			}
+			else {
+				htmlContent.style.display = 'none';
+				cssContent.style.display = 'block';
+				jsContent.style.display = 'none';
+				phpContent.style.display = 'none';
+				showed = "css";
+			}
+		});
+		
+		jsButton.addEventListener('click', function() {
+			if (!showed) {
+				jsContent.style.display = 'block';
+				showed = "js";
+			}
+			else if (showed === "js") {
+				jsContent.style.display = 'none';
+				showed = "";
+			}
+			else {
+				htmlContent.style.display = 'none';
+				cssContent.style.display = 'none';
+				jsContent.style.display = 'block';
+				phpContent.style.display = 'none';
+				showed = "js";
+			}
+		});
+		
+		phpButton.addEventListener('click', function() {
+			if (!showed) {
+				phpContent.style.display = 'block';
+				showed = "php";
+			}
+			else if (showed === "php") {
+				phpContent.style.display = 'none';
+				showed = "";
+			}
+			else {
+				htmlContent.style.display = 'none';
+				cssContent.style.display = 'none';
+				jsContent.style.display = 'none';
+				phpContent.style.display = 'block';
+				showed = "php";
+			}
+		});
 	</script>
 </body>
 </html>
