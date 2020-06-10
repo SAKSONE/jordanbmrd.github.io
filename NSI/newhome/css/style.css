@@ -240,7 +240,7 @@ img {
              -23px -23px 46px #ffffff;
 }
 .discovercontent ul li:hover {
-	transform: scale(1.2);
+	transform: scale(1.05);
 	transition-duration: 0.5s;
 }
 
