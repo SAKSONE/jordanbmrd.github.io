@@ -17,9 +17,6 @@
 	<div class="phone-navbar">
 		<nav data-aos="fade-down">
 			<ul>
-				<li>
-					<a href="#">ACC</a>
-				</li>
 				<li>—</li>
 				<li>
 					<a onclick="htmlClicked();" href="#discover" id="html-btn" data-scroll="on">HTML</a>
@@ -45,9 +42,6 @@
 		<nav>
 			<ul data-aos="fade-down">
 				<li>
-					<a href="#">Accueil</a>
-				</li>
-				<li>
 					<a onclick="htmlClicked();" href="#discover" id="html-btn" data-scroll="on">HTML</a>
 				</li>
 				<li>
@@ -66,7 +60,7 @@
 	</div>
 
 	<div class="content" data-aos="fade-left">
-		<h1 class="title">Programmation web</h1>
+		<h1 class="titlecontent">Programmation web</h1>
 		<p>
 			Pour qu’un contenu soit rendu accessible à vous, votre navigateur internet (Chrome, Firefox, Internet Explorer …) doit récupérer et traiter des fichiers. Le développement de ces fichiers servant à rendre des contenus disponibles sur le web est appelé la programmation web. En cela, la programmation web se différencie du développement logiciel consistant à construire des applications informatiques pouvant être utilisées hors du web.<br><br>
 			<div class="langagesutilises">
@@ -97,7 +91,7 @@
 		<iframe data-aos="fade-left" width="560" height="315" src="https://www.youtube.com/embed/D_nxCuQloG0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 
-	<div class="discovercontent">
+	<div id="discovercontent">
 		<h3 data-aos="fade-down">Découvrir la programmation</h3>
 		<ul data-aos="fade-up">
 			<li>
@@ -121,7 +115,10 @@
 	</div>
 	
 	<div id="htmlcontent">
-		<h3>HTML</h3>
+		<div class="titlecontent">
+			<h3>HTML</h3>
+			<a href="#discovercontent" data-scroll="on" class="close-btn">&times;</a>
+		</div>
 		<br>
 		<p>
 			&emsp;&emsp;HTML (<em>HyperText Markup Language</em>) n'est pas un langage de programmation : c'est un langage de balisage qui sert à indiquer au navigateur comment structurer les pages web visitées. Il peut être aussi compliqué ou aussi simple que le développeur web souhaite qu'il soit. Le HTML se compose d'une série d'éléments avec lesquels vous pouvez encadrer, envelopper ou baliser différentes parties du contenu pour les faire apparaître ou agir d'une certaine manière. Des balises encadrantes peuvent transformer une petite partie de contenu en un lien vers une autre page sur le Web, mettre des mots en italique, etc.<br>
@@ -178,7 +175,10 @@
 	</div>
 	
 	<div id="csscontent">
-		<h3>CSS</h3>
+		<div class="titlecontent">
+			<h3>CSS</h3>
+			<a href="#discovercontent" data-scroll="on" class="close-btn">&times;</a>
+		</div>
 		<br>
 		<p align="left">
 			Les <b>CSS</b>, <em>Cascading Style Sheets</em> (feuilles de styles en cascade), servent à mettre en forme des documents web, type page HTML ou XML. Par l'intermédiaire de propriétés d'apparence (couleurs, bordures, polices, etc.) et de placement (largeur, hauteur, côte à côte, dessus-dessous, etc.), le rendu d'une page web peut être intégralement modifié sans aucun code supplémentaire dans la page web. Les feuilles de styles ont d'ailleurs pour objectif principal de dissocier le contenu de la page de son apparence visuelle. Ceci permet :
@@ -198,7 +198,10 @@
 	</div>
 	
 	<div id="jscontent">
-		<h3>JavaScript</h3>
+		<div class="titlecontent">
+			<h3>JavaScript</h3>
+			<a href="#discovercontent" data-scroll="on" class="close-btn">&times;</a>
+		</div>
 		<br>
 		<p>
 			JavaScript (qui est souvent abrégé en « JS ») est un langage de script léger, orienté objet, principalement connu comme le langage de script des pages web. Mais il est aussi utilisé dans de nombreux environnements extérieurs aux navigateurs web tels que Node.js, Apache CouchDB voire Adobe Acrobat. Le code JavaScript est interprété ou compilé à la volée (JIT). C'est un langage à objets utilisant le concept de prototype, disposant d'un typage faible et dynamique qui permet de programmer suivant plusieurs paradigmes de programmation : fonctionnelle, impérative et orientée objet.
@@ -214,7 +217,10 @@
 	</div>
 	
 	<div id="phpcontent">
-		<h3>PHP</h3>
+		<div class="titlecontent">
+			<h3>PHP</h3>
+			<a href="#discovercontent" data-scroll="on" class="close-btn">&times;</a>
+		</div>
 		<br>
 		<p>
 			&emsp;&emsp;PHP (officiellement, ce sigle est un acronyme récursif pour PHP Hypertext Preprocessor) est un langage de scripts généraliste et Open Source, spécialement conçu pour le développement d'applications web. Il peut être intégré facilement au HTML.
@@ -276,63 +282,93 @@
 		function htmlClicked() {
 			if (!showed) {
 				htmlContent.style.display = 'block';
-				showed = "html";
 			}
 			else {
 				htmlContent.style.display = 'block';
 				cssContent.style.display = 'none';
 				jsContent.style.display = 'none';
 				phpContent.style.display = 'none';
-				showed = "html";
 			}
+			showed = "html";
 		}
 
 		function cssClicked() {
 			if (!showed) {
 				cssContent.style.display = 'block';
-				showed = "css";
 			}
 			else {
 				htmlContent.style.display = 'none';
 				cssContent.style.display = 'block';
 				jsContent.style.display = 'none';
 				phpContent.style.display = 'none';
-				showed = "css";
 			}
+			showed = "css";
 		}
 
 		function jsClicked() {
 			if (!showed) {
 				jsContent.style.display = 'block';
-				showed = "js";
 			}
 			else {
 				htmlContent.style.display = 'none';
 				cssContent.style.display = 'none';
 				jsContent.style.display = 'block';
 				phpContent.style.display = 'none';
-				showed = "js";
 			}
+			showed = "js";
 		}
 
 		function phpClicked() {
 			if (!showed) {
 				phpContent.style.display = 'block';
-				showed = "php";
 			}
 			else {
 				htmlContent.style.display = 'none';
 				cssContent.style.display = 'none';
 				jsContent.style.display = 'none';
 				phpContent.style.display = 'block';
-				showed = "php";
 			}
+			showed = "php";
 		}
 
 		htmlButton.addEventListener('click', function() { htmlClicked(); });
 		cssButton.addEventListener('click', function() { cssClicked(); });
 		jsButton.addEventListener('click', function() { jsClicked(); });
 		phpButton.addEventListener('click', function() { phpClicked(); });
+
+
+		// Close any content
+
+		var close_btn = document.getElementsByClassName('close-btn');
+
+		function close(showed) {
+			switch(showed){
+				case 'html':
+					console.log('html closed');
+					htmlContent.style.display = 'none';
+					break;
+				case 'css':
+					console.log('css closed');
+					cssContent.style.display = 'none';
+					break;
+				case 'js':
+					console.log('js closed');
+					jsContent.style.display = 'none';
+					break;
+				case 'php':
+					console.log('php closed');
+					phpContent.style.display = 'none';
+					break;
+				default:
+					break;
+			}
+		}
+
+		for (var i = 0; i < close_btn.length; i++){
+			close_btn[i].addEventListener('click', function() { close(showed); });
+		}
+
+
 	</script>
 </body>
 </html>

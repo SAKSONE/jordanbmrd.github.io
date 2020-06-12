@@ -68,7 +68,7 @@ img {
 		text-align: left;
 	}
 
-	.discovercontent ul li {
+	#discovercontent ul li {
 		width: 230px !important;
 		margin: auto !important;
 		margin-bottom: 30px !important;
@@ -107,6 +107,9 @@ img {
 }
 .phone-navbar ul {
 	width: 90% !important;
+}
+.navbar ul {
+	width: auto !important;
 }
 .navbar ul, .phone-navbar ul {
 	list-style-type: none;
@@ -150,6 +153,7 @@ img {
 	font-family: 'Gordita', sans-serif;
 	font-size: 50px;
 	margin-bottom: 30px;
+	word-wrap: break-word;
 }
 .content p {
 	font-family: sans-serif;
@@ -206,17 +210,17 @@ img {
 
 
 
-.discovercontent {
+#discovercontent {
 	background-color: white;
 	padding: 8% 0 8% 0;
 }
-.discovercontent h3 {
+#discovercontent h3 {
 	font-family: 'Gordita', sans-serif;
 	font-size: 40px;
 	text-align: center;
 	margin-bottom: 6%;
 }
-.discovercontent ul {
+#discovercontent ul {
 	width: 80%;
 	margin: auto;
 	list-style-type: none;
@@ -225,7 +229,7 @@ img {
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
-.discovercontent ul li {
+#discovercontent ul li {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -239,7 +243,7 @@ img {
 	box-shadow:  23px 23px 46px #c5c5c5, 
              -23px -23px 46px #ffffff;
 }
-.discovercontent ul li:hover {
+#discovercontent ul li:hover {
 	transform: scale(1.05);
 	transition-duration: 0.5s;
 }
@@ -247,7 +251,7 @@ img {
 
 
 /*
-	HTML
+	CONTENTS
 	
 */
 
@@ -269,6 +273,20 @@ img {
 }
 #htmlcontent p, #csscontent p, #csscontent ul li, #jscontent p, #jscontent div, #phpcontent p {
 	font-family: sans-serif;
+}
+.titlecontent {
+	display: flex;
+	justify-content: space-between;
+}
+.close-btn {
+	text-decoration: none;
+	font-family: sans-serif;
+	color: black;
+	font-size: 25px;
+}
+.close-btn:hover {
+	cursor: pointer;
+	color: gray;
 }
 .code {
 	display: inline-block;
@@ -303,16 +321,6 @@ img {
 	padding: 15px;
 	font-family: sans-serif;
 }
-
-
-
-/*
-	
-	CSS
-	
-*/
-
-
 
 #csscontent .contentlist{
 	margin: auto;
