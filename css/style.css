@@ -1,3 +1,6 @@
+html {
+	scroll-behavior: smooth;
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -5,38 +8,65 @@
 body{
 	background-color: #F3F3F3;
 }
+p, label {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+.underlined {
+	text-decoration: underline;
+}
+.titleBox {
+	scroll-snap-align: start;
+
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#seeProjectsButton {
+	color: white;
+	padding: 10px;
+	border: 2px solid white;
+	background-color: transparent;
+	font-family: sans-serif;
+	text-align: center;
+	text-decoration: none;
+	transition-duration: 0.3s;
+}
+#seeProjectsButton:hover {
+	/* Couleurs gérées en javascript */
+	transition-duration: 0.3s;
+}
+.titleBox .seeProjectsButtonBox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+#seeProjectsButton:hover {
+	transform: scale(1.1);
+	transition-duration: 0.2s;
+}
 .divider{
 	width: 10%;
-	color: black;
 
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
-.app-title{
-	font-family: 'Montserrat', sans-serif;
-}
-.iphone-mockup{
-	width: 60%;
-    height: 600px;
-	background-image: url('../img/iphone.jpg');
-	background-repeat: no-repeat;
-	background-size: contain;
-}
-.mac-mockup{
-	width: 60%;
-  	max-height: 100vh;
-    height: 650px;
-	background-image: url('../img/mac.jpg');
-	background-repeat: no-repeat;
-	background-size: contain;
-}
 .container{
-	margin-top: 5%;
-	margin-bottom: 5%;
-	width: 100%;
+	scroll-snap-align: start;
+
+	background: rgb(2,0,36);
+	background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(40,42,42,1) 0%, rgba(26,27,27,1) 100%);
+
+	padding-top: 2%;
+	padding-bottom: 8%;
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 }
 .title{
 	font-family: 'Montserrat', sans-serif;
@@ -47,17 +77,16 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 35px;
 }
-footer{
+footer {
 	padding: 20px;
+	background-color: #2e3131;
 }
-footer a{
-	color: #08a0e9;
-}
-
 
 /* Switch */
 .switch{
-	padding: 10px 10px 10px 30px;
+	padding: 20px 10px 10px 30px;
+	position: fixed;
+	z-index: 99;
 }
 .toggle_bar {
 	text-align: center;
@@ -105,4 +134,130 @@ footer a{
 }
 .contract_toggle input[type=checkbox]:checked ~ .toggle_bar .toggle_square:before {
 	content: "✓";
+}
+
+
+/* Background animation */
+#area{
+    background: #2e3131;  
+    background: -webkit-linear-gradient(to left, #000, #2e3131);
+    width: 100%;
+    height:100vh;
+    
+   
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
 }

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Jordan Baumard</title>
-	<meta name="description" content="Discover my development creations. iOS dev, Web development, ...">
+	<meta name="description" content="Découvrez mes créations. Développement ios, web, c, etc.">
   	<meta name="keywords" content="Jordan, Baumard, ios, swift, swiftui, web, development, website, developer, Le Mans, 72000, jordbmrd, jordanbmrd">
   	<meta name="author" content="Jordan Baumard">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,76 +16,208 @@
 	<script src="https://kit.fontawesome.com/bc78ea3423.js" crossorigin="anonymous"></script>
 </head>
 <body id="body">
-	<div class="switch">
-  		<label for="contractToggle" class="contract_toggle app-title">
-  			Night mode<br><br>
-			<input type="checkbox" id="contractToggle" name="contract_toggle"/>
+
+	<div class="switch" data-aos="fade-down">
+  		<label for="contractToggle" class="contract_toggle">
+  			<span id="switchTitle">Night mode</span><br><br>
+			<input type="checkbox" id="contractToggle" name="contract_toggle" checked>
 			<span class="toggle_bar">
 				<span class="toggle_square"></span>
 			</span>
 		</label>
 	</div>
-	<div class="container">
+
+
+
+	<div class="titleBox" id="area">
+		<ul class="circles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
 		<div>
-			<p class="title" data-aos="fade-up-left">Welcome,</p>
-			<p class="subtitle" data-aos="fade-up-left">discover my creations.</p>
+			<p class="title" data-aos="fade-right">Welcome,</p>
+			<p class="subtitle" data-aos="fade-right">i'm a full-stack web developer</p>
+			<div class="seeProjectsButtonBox" data-aos="fade-right">
+				<a href="#projects" id="seeProjectsButton">Voir mes projets&nbsp;&nbsp;<i id="arrowSeeProjects" class="fas fa-arrow-right"></i></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" id="projects">
+
+		<p class="title divider underlined" data-aos="fade-right">Projets</p>
+
+		<div class="weatherApp">
+			<p data-aos="fade-right" align="center">
+				<b>APPLICATION MÉTÉO "The Weather App"</b><br>
+				<em>(Langage : Swift)</em>
+			</p>
+			<img src="./img/iphone.png" alt="Iphone Image" data-aos="fade-right">
 		</div>
 
-		<hr class="divider">
+		<hr class="divider" data-aos="fade-right">
 
-		<p class="app-title" data-aos="fade-up" align="center">THE WEATHER APP</p>
-		<div class="iphone-mockup" id="iphone" data-aos="fade-left"></div>
-
-		<hr class="divider">
-
-		<p class="app-title" data-aos="fade-up" align="center">CALCULATOR</p>
-		<a href="./calculator/index.html" class="mac-mockup" id="mac" data-aos="fade-right"></a>
+		<div class="calculator">
+			<p data-aos="fade-right" align="center">
+				<b>CALCULETTE</b><br>
+				<em>(Langage : Javascript)</em>
+			</p>
+			<a href="./calculator/index.html" target="_blank">
+				<img src="./img/mac.png" alt="Mac Image" data-aos="fade-right">
+			</a>
+		</div>
 	</div>
 
 	<footer>
-		<p class="app-title" align="center">
-			Made by Jordan -
-			<a href="https://twitter.com/jordbmrd" target="_blank">
-				<i class="fab fa-twitter"></i>
-			</a>
+		<p align="center">
+			&copy; BAUMARD Jordan
 		</p>
 	</footer>
 
 	<script>
 		AOS.init();
 
+		// Pour le mode nuit
+
 		var nightMode = localStorage.getItem("nightMode");
 
 		const enableNightMode = () => {
+			// COULEURS NOIRES
+
+			document.getElementsByTagName("footer")[0].style.backgroundColor = "#2e3131";
 			document.getElementById("body").style.backgroundColor = "#2e3131";
-			document.getElementById("body").style.color = "white";
-			document.getElementById("iphone").style.backgroundImage = "url('./img/iphone-night.jpg')";
-			document.getElementById("mac").style.backgroundImage = "url('./img/mac-night.jpg')";
+
+			document.getElementsByClassName("container")[0].style.background = "rgb(2,0,36)";
+			document.getElementsByClassName("container")[0].style.background = "radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(40,42,42,1) 0%, rgba(26,27,27,1) 100%)";
+
+			btn = document.getElementById("seeProjectsButton");
+			btn.style.color = "white";
+			btn.style.border = "2px solid white";
+			btn.style.backgroundColor = "transparent";
+
+			// Pour le hover
+			btn.addEventListener("mouseover", () => {
+				btn.style.border = "black";
+				btn.style.color = "black";
+				btn.style.backgroundColor = "white";
+			});
+			btn.addEventListener("mouseleave", () => {
+				btn = document.getElementById("seeProjectsButton");
+				btn.style.color = "white";
+				btn.style.border = "2px solid white";
+				btn.style.backgroundColor = "transparent";
+			});
+
+			var p = document.getElementsByTagName("p");
+			for (var i = 0; i < p.length; i++) {
+				p[i].style.color = "white";
+			}
+
+			var label = document.getElementsByTagName("label");
+			for (var i = 0; i < label.length; i++) {
+				label[i].style.color = "white";
+			}
+
+			document.getElementById("area").style.background = "#2e3131";
+			document.getElementById("area").style.background = "-webkit-linear-gradient(to left, #000, #2e3131);";
+
+			var liCircles = document.querySelectorAll("ul.circles > li");
+			for (var i = 0; i < liCircles.length; i++) {
+				liCircles[i].style.background = "rgba(255, 255, 255, 0.05)";
+			}
+
 			localStorage.setItem("nightMode", "enabled");
 		};
 
 		const disableNightMode = () => {
+			// COULEURS BLANCHES
+
+			document.getElementsByTagName("footer")[0].style.backgroundColor = "#F3F3F3";
 			document.getElementById("body").style.backgroundColor = "#F3F3F3";
-			document.getElementById("body").style.color = "black";
-			document.getElementById("iphone").style.backgroundImage = "url('./img/iphone.jpg')";
-			document.getElementById("mac").style.backgroundImage = "url('./img/mac.jpg')";
+
+			document.getElementsByClassName("container")[0].style.background = "rgb(2,0,36)";
+			document.getElementsByClassName("container")[0].style.background = "radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(228,240,240,1) 0%, rgba(194,207,207,1) 100%)";
+
+			btn = document.getElementById("seeProjectsButton");
+			btn.style.color = "black";
+			btn.style.border = "2px solid black";
+			btn.style.backgroundColor = "transparent";
+
+			// Pour le hover
+			btn.addEventListener("mouseover", () => {
+				btn.style.border = "white";
+				btn.style.color = "white";
+				btn.style.backgroundColor = "black";
+			});
+			btn.addEventListener("mouseleave", () => {
+				btn = document.getElementById("seeProjectsButton");
+				btn.style.color = "black";
+				btn.style.border = "2px solid black";
+				btn.style.backgroundColor = "transparent";
+			});
+
+			var p = document.getElementsByTagName("p");
+			for (var i = 0; i < p.length; i++) {
+				p[i].style.color = "black";
+			}
+
+			var label = document.getElementsByTagName("label");
+			for (var i = 0; i < label.length; i++) {
+				label[i].style.color = "black";
+			}
+
+			document.getElementById("area").style.background = "#F3F3F3";
+			document.getElementById("area").style.background = "-webkit-linear-gradient(to left, #fff, #F3F3F3);";
+
+			var liCircles = document.querySelectorAll("ul.circles > li");
+			for (var i = 0; i < liCircles.length; i++) {
+				liCircles[i].style.background = "rgba(255, 255, 255, 1)";
+			}
+
 			localStorage.setItem("nightMode", null);
 		};
 
 		var checkbox = document.getElementById("contractToggle");
 
+		/* On affiche l'état dans lequel c'était enregistré */
 		if (nightMode === "enabled"){
 			enableNightMode();
 			checkbox.checked = true;
 		}
+		else {
+			disableNightMode();
+			checkbox.checked = false;
+		}
 
 		checkbox.addEventListener('change', () => {
 			var nightMode = localStorage.getItem("nightMode");
+			console.log(nightMode);
 			if (nightMode !== "enabled"){
 				enableNightMode();
 			} else {
 				disableNightMode();
 			}
+		});
+
+		console.log(nightMode);
+
+
+		var buttonSeeProjects = document.getElementById("seeProjectsButton");
+
+		buttonSeeProjects.addEventListener('mouseenter', () => {
+			document.getElementById("arrowSeeProjects").style.transform = "rotate(90deg)";
+		});
+
+		buttonSeeProjects.addEventListener('mouseleave', () => {
+			document.getElementById("arrowSeeProjects").style.transform = "rotate(0deg)";
 		});
 	</script>
 </body>
