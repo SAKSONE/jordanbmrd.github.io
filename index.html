@@ -3,9 +3,9 @@
 <head>
 	<title>Jordan Baumard</title>
 	<meta name="description" content="Découvrez mes créations. Développement ios, web, c, etc.">
-  	<meta name="keywords" content="Jordan, Baumard, ios, swift, swiftui, web, development, website, developer, Le Mans, 72000, jordbmrd, jordanbmrd">
-  	<meta name="author" content="Jordan Baumard">
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="Jordan, Baumard, ios, swift, swiftui, web, development, website, developer, Le Mans, 72000, jordbmrd, jordanbmrd">
+	<meta name="author" content="Jordan Baumard">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
@@ -18,8 +18,8 @@
 <body id="body">
 
 	<div class="switch" data-aos="fade-down">
-  		<label for="contractToggle" class="contract_toggle">
-  			<span id="switchTitle">Night mode</span><br><br>
+		<label for="contractToggle" class="contract_toggle">
+			<span id="switchTitle">Night mode</span><br><br>
 			<input type="checkbox" id="contractToggle" name="contract_toggle" checked>
 			<span class="toggle_bar">
 				<span class="toggle_square"></span>
@@ -42,6 +42,8 @@
 			<li></li>
 			<li></li>
 		</ul>
+		<img src="https://instagram.fcdg1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/155429286_431953021245860_3064261132330332683_n.jpg?tp=1&_nc_ht=instagram.fcdg1-1.fna.fbcdn.net&_nc_ohc=LaJDBporC5kAX-P0qNJ&oh=ba2b65a7baaad97879a97c9493022521&oe=606A8954" class="logo">
+		<br><br>
 		<div>
 			<p class="title" data-aos="fade-right">Welcome,</p>
 			<p class="subtitle" data-aos="fade-right">i'm a full-stack web developer</p>
@@ -50,6 +52,9 @@
 			</div>
 		</div>
 	</div>
+
+
+	<!-- PROJETS -->
 
 	<div class="container" id="projects">
 
@@ -63,40 +68,193 @@
 			<img src="./img/iphone.png" alt="Iphone Image" data-aos="fade-right">
 		</div>
 
-		<hr class="divider" data-aos="fade-right">
+		<hr class="divider width10" data-aos="fade-right">
 
 		<div class="calculator">
-			<p data-aos="fade-right" align="center">
-				<b>CALCULETTE</b><br>
-				<em>(Langage : Javascript)</em>
-			</p>
-			<a href="./calculator/index.html" target="_blank">
-				<img src="./img/mac.png" alt="Mac Image" data-aos="fade-right">
-			</a>
+			<div class="titreSection" data-aos="fade-right">
+				<p align="center">
+					<b>CALCULETTE</b><br>
+					<em>(Langage : Javascript)</em>
+				</p>
+				<button id="calculetteMoreButton" class="moreButton">
+					<i class="fas fa-plus"></i>
+				</button>
+			</div>
+			<div id="descriptionCalculette">
+				<p data-aos="fade-right">La calculette est un projet que j'ai réalisé en 2018. Elle utilise la fonction intégrée <em>eval()</em> pour fonctionner. Ce qui est très simple. Mais pour mon niveau de l'époque, j'en suis plutôt fier. Je l'ai réalisé en concurrence avec celle de Matthieu Porte (<a href="https://matthieuporte.github.io/calculator.html" target="_blank">cliquez-ici</a>).</p>
+				<a href="./calculator/index.html" target="_blank">
+					<img src="./img/mac.png" alt="Mac Image" data-aos="fade-right">
+				</a>
+			</div>
+		</div>
+
+		<hr class="divider width10" data-aos="fade-right">
+
+		<div class="pendu">
+			<div class="titreSection" data-aos="fade-right">
+				<p align="center">
+					<b>JEU DU PENDU</b><br>
+					<em>(Langage : C)</em>
+				</p>
+				<button id="penduMoreButton" class="moreButton">
+					<i class="fas fa-plus"></i>
+				</button>
+			</div>
+			<div id="descriptionPendu">
+				<p data-aos="fade-right">Le jeu du Pendu utilise un fichier <em>dictionnaire.txt</em> pour choisir un mot aléatoirement. Il est donc très simple de rajouter des mots. Une des difficultés rencontrée était la détection de plusieurs occurrences d'une lettre dans le mot.</p>
+				<img src="./img/pendumac.png" alt="Mac Image" data-aos="fade-right">
+			</div>
+		</div>
+
+		<p class="subtitle">...</p>
+	</div>
+
+
+	<!-- A PROPOS -->
+
+	<div class="container-two" id="about">
+
+		<p class="title divider underlined" data-aos="fade-right">À propos</p>
+
+		<div class="aboutMainBox" data-aos="fade-right">
+			<img src="https://instagram.fcdg1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/155429286_431953021245860_3064261132330332683_n.jpg?tp=1&_nc_ht=instagram.fcdg1-1.fna.fbcdn.net&_nc_ohc=LaJDBporC5kAX-P0qNJ&oh=ba2b65a7baaad97879a97c9493022521&oe=606A8954" class="logo">
+			<div>
+				<p class="subtitle">
+					Jordan BAUMARD<br>
+				</p>
+				<p class="descAbout">
+					18 ans (2003)<br>
+					Lycée Touchard Washington<br>
+					72000 Le Mans
+				</p>
+			</div>
+		</div>
+
+		<div class="aboutSocialBox" data-aos="fade-right">
+			<div id="social-test">
+				<ul class="social">
+					<li>
+						<a href="https://www.touchard-washington.fr/" target="_blank">
+							<i class="fas fa-graduation-cap" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://instagram.com/jordbmrd/"  target="_blank">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="skillsBox" data-aos="fade-right">
+			<p class="subtitle competencesTitre">Mes compétences ?</p>
+			<br><br>
+			<table class="progressBarBox">
+				<tr>
+					<td>
+						<p>HTML 90%</p>
+					</td>
+					<td>
+						<div class="progressBar">
+							<div class="progress">
+								<div class="progress-value" data-width="90"></div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>CSS 90%</p>
+					</td>
+					<td>
+						<div class="progressBar">
+							<div class="progress">
+								<div class="progress-value" data-width="90"></div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Python 90%</p>
+					</td>
+					<td>
+						<div class="progressBar">
+							<div class="progress">
+								<div class="progress-value" data-width="90"></div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>JS 60%</p>
+					</td>
+					<td>
+						<div class="progressBar">
+							<div class="progress">
+								<div class="progress-value" data-width="60"></div>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
 		</div>
 	</div>
 
 	<footer>
 		<p align="center">
-			&copy; BAUMARD Jordan
+			&copy; 2021 BAUMARD Jordan
 		</p>
 	</footer>
 
 	<script>
 		AOS.init();
 
+		// Bouton pour afficher les infos des projets
+		var buttonSeeMoreCalc = document.getElementById("calculetteMoreButton");
+		var buttonSeeMorePendu = document.getElementById("penduMoreButton");
+
 		// Pour le mode nuit
 
 		var nightMode = localStorage.getItem("nightMode");
 
 		const enableNightMode = () => {
-			// COULEURS NOIRES
+			// BLACK MODE
+
+			buttonSeeMoreCalc.style.color = "white";
+			buttonSeeMoreCalc.style.border = "3px solid white";
+
+			// Pour le hover
+			buttonSeeMoreCalc.addEventListener("mouseover", () => {
+				buttonSeeMoreCalc.style.color = "black";
+				buttonSeeMoreCalc.style.backgroundColor = "white";
+			});
+			buttonSeeMoreCalc.addEventListener("mouseleave", () => {
+				buttonSeeMoreCalc.style.color = "white";
+				buttonSeeMoreCalc.style.backgroundColor = "transparent";
+			});
+
+			buttonSeeMorePendu.style.color = "white";
+			buttonSeeMorePendu.style.border = "3px solid white";
+
+			buttonSeeMorePendu.addEventListener("mouseover", () => {
+				buttonSeeMorePendu.style.color = "black";
+				buttonSeeMorePendu.style.backgroundColor = "white";
+			});
+			buttonSeeMorePendu.addEventListener("mouseleave", () => {
+				buttonSeeMorePendu.style.color = "white";
+				buttonSeeMorePendu.style.backgroundColor = "transparent";
+			});
 
 			document.getElementsByTagName("footer")[0].style.backgroundColor = "#2e3131";
 			document.getElementById("body").style.backgroundColor = "#2e3131";
 
 			document.getElementsByClassName("container")[0].style.background = "rgb(2,0,36)";
 			document.getElementsByClassName("container")[0].style.background = "radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(40,42,42,1) 0%, rgba(26,27,27,1) 100%)";
+
+			document.getElementsByClassName("container-two")[0].style.background = "#2e3131";
 
 			btn = document.getElementById("seeProjectsButton");
 			btn.style.color = "white";
@@ -129,6 +287,8 @@
 			document.getElementById("area").style.background = "#2e3131";
 			document.getElementById("area").style.background = "-webkit-linear-gradient(to left, #000, #2e3131);";
 
+
+			/* Cercles animation */
 			var liCircles = document.querySelectorAll("ul.circles > li");
 			for (var i = 0; i < liCircles.length; i++) {
 				liCircles[i].style.background = "rgba(255, 255, 255, 0.05)";
@@ -138,13 +298,41 @@
 		};
 
 		const disableNightMode = () => {
-			// COULEURS BLANCHES
+			// WHITE MODE
+
+			buttonSeeMoreCalc.style.color = "black";
+			buttonSeeMoreCalc.style.border = "3px solid black";
+
+			// Pour le hover
+			buttonSeeMoreCalc.addEventListener("mouseover", () => {
+				buttonSeeMoreCalc.style.color = "white";
+				buttonSeeMoreCalc.style.backgroundColor = "black";
+			});
+			buttonSeeMoreCalc.addEventListener("mouseleave", () => {
+				buttonSeeMoreCalc.style.color = "black";
+				buttonSeeMoreCalc.style.backgroundColor = "transparent";
+			});
+
+			buttonSeeMorePendu.style.color = "black";
+			buttonSeeMorePendu.style.border = "3px solid black";
+
+			// Pour le hover
+			buttonSeeMorePendu.addEventListener("mouseover", () => {
+				buttonSeeMorePendu.style.color = "white";
+				buttonSeeMorePendu.style.backgroundColor = "black";
+			});
+			buttonSeeMorePendu.addEventListener("mouseleave", () => {
+				buttonSeeMorePendu.style.color = "black";
+				buttonSeeMorePendu.style.backgroundColor = "transparent";
+			});
 
 			document.getElementsByTagName("footer")[0].style.backgroundColor = "#F3F3F3";
 			document.getElementById("body").style.backgroundColor = "#F3F3F3";
 
-			document.getElementsByClassName("container")[0].style.background = "rgb(2,0,36)";
-			document.getElementsByClassName("container")[0].style.background = "radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(228,240,240,1) 0%, rgba(194,207,207,1) 100%)";
+			document.getElementsByClassName("container")[0].style.background = "#F3F3F3";
+
+			document.getElementsByClassName("container-two")[0].style.background = "rgb(2,0,36)";
+			document.getElementsByClassName("container-two")[0].style.background = "radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(228,240,240,1) 0%, rgba(194,207,207,1) 100%)";
 
 			btn = document.getElementById("seeProjectsButton");
 			btn.style.color = "black";
@@ -177,6 +365,8 @@
 			document.getElementById("area").style.background = "#F3F3F3";
 			document.getElementById("area").style.background = "-webkit-linear-gradient(to left, #fff, #F3F3F3);";
 
+
+			/* Cercles animation */
 			var liCircles = document.querySelectorAll("ul.circles > li");
 			for (var i = 0; i < liCircles.length; i++) {
 				liCircles[i].style.background = "rgba(255, 255, 255, 1)";
@@ -218,6 +408,40 @@
 
 		buttonSeeProjects.addEventListener('mouseleave', () => {
 			document.getElementById("arrowSeeProjects").style.transform = "rotate(0deg)";
+		});
+
+
+		/* CALCULETTE DESCRIPTION */
+
+		var isCalcInfoOpen = false;
+		var descriptionCalc = document.querySelectorAll("div#descriptionCalculette > p")[0];
+
+		buttonSeeMoreCalc.addEventListener("click", () => {
+			if (isCalcInfoOpen) { // Si ouvert
+				descriptionCalc.style.display = "none";
+			} else { // Si fermé
+				descriptionCalc.style.display = "block";
+			}
+
+
+			isCalcInfoOpen = !isCalcInfoOpen; // Si c'était ouvert on passe en mode fermé et inversement
+		});
+
+
+		/* PENDU DESCRIPTION */
+
+		var isPenduInfoOpen = false;
+		var descriptionPendu = document.querySelectorAll("div#descriptionPendu > p")[0];
+
+		buttonSeeMorePendu.addEventListener("click", () => {
+			if (isPenduInfoOpen) { // Si ouvert
+				descriptionPendu.style.display = "none";
+			} else { // Si fermé
+				descriptionPendu.style.display = "block";
+			}
+
+
+			isPenduInfoOpen = !isPenduInfoOpen; // Si c'était ouvert on passe en mode fermé et inversement
 		});
 	</script>
 </body>

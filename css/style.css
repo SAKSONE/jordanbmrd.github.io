@@ -12,12 +12,21 @@ p, label {
 	color: white;
 	font-family: 'Montserrat', sans-serif;
 }
+span {
+	font-family: 'Montserrat', sans-serif;
+}
+button:focus {outline:0;}
 .underlined {
 	text-decoration: underline;
 }
-.titleBox {
-	scroll-snap-align: start;
+.logo {
+	border-radius: 50%;
 
+	-webkit-box-shadow: 4px 4px 12px -5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 12px -5px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 12px -5px rgba(0,0,0,0.75);
+}
+.titleBox {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -48,17 +57,61 @@ p, label {
 	transform: scale(1.1);
 	transition-duration: 0.2s;
 }
-.divider{
+.width10 {
 	width: 10%;
-
+}
+.divider{
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
 .container{
-	scroll-snap-align: start;
-
 	background: rgb(2,0,36);
 	background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(40,42,42,1) 0%, rgba(26,27,27,1) 100%);
+
+	padding-top: 2%;
+	padding-bottom: 8%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.moreButton {
+	padding: 10px;
+	border: 3px solid white;
+	background-color: transparent;
+	color: white;
+	margin-left: 15px;
+}
+.moreButton:hover {
+	transform: scale(1.2);
+	background-color: white;
+	color: black;
+	transition-duration: 0.1s;
+	cursor: pointer;
+}
+.titreSection {
+	display: flex;
+	justify-content: center;
+}
+#descriptionPendu, #descriptionCalculette {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin: 50px 30px;
+}
+#descriptionPendu p, #descriptionCalculette p {
+	display: none;
+	width: 40%;
+	border-top: 3px solid orange;
+	padding-top: 10px;
+}
+#descriptionCalculette p a {
+	color: inherit;
+}
+.container-two {
+	background: rgb(46, 49, 49);
 
 	padding-top: 2%;
 	padding-bottom: 8%;
@@ -77,6 +130,73 @@ p, label {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 35px;
 }
+.aboutMainBox {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 40%;
+}
+.descAbout {
+	line-height: 1.5em;
+}
+.aboutSocialBox {
+	display: flex;
+	align-items: center;
+	padding: 50px 0;
+}
+.competencesTitre {
+	text-align: center;
+}
+.skillsBox {
+	margin-top: 5%;
+}
+.progressBarBox tr td p {
+	text-align: right;
+	margin-right: 10px;
+}
+.progressBar {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.progressBar p {
+	margin-right: 10px;
+}
+.progress {
+	background: rgba(255,255,255,0.1);
+	justify-content: flex-start;
+	border-radius: 100px;
+	align-items: center;
+	position: relative;
+	padding: 0 5px;
+	display: flex;
+	height: 40px;
+	width: 500px;
+}
+.progress-value[data-width="90"] {
+	animation: load90 1.5s normal forwards;
+	border-radius: 100px;
+	background: #fff;
+	height: 30px;
+	width: 0;
+}
+.progress-value[data-width="60"] {
+	animation: load60 1.5s normal forwards;
+	border-radius: 100px;
+	background: #fff;
+	height: 30px;
+	width: 0;
+}
+
+@keyframes load90 {
+  0% { width: 0; }
+  100% { width: 90%; }
+}
+@keyframes load60 {
+  0% { width: 0; }
+  100% { width: 60%; }
+}
+
 footer {
 	padding: 20px;
 	background-color: #2e3131;
@@ -260,4 +380,42 @@ footer {
         border-radius: 50%;
     }
 
+}
+
+
+/* Social media buttons */
+
+#social-test {
+	text-align: center;
+	font-size: 30px;
+}
+#social-test li {
+	display: inline-block;
+}
+#social-test li a {
+	color: rgba(256, 256, 256, 0.6);
+	border-radius: 6px;
+	list-style-type: none;
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	border: 1px solid rgba(256, 256, 256, 0.6);
+	cursor: pointer;
+	transition: ease .3s;
+}
+#social-test li a:hover {
+	color: rgba(256, 256, 256, 1);
+	border: 1px solid rgba(256, 256, 256, 1);
+}
+
+.social {
+	padding: 1px;
+}
+.social:hover > li {
+	opacity: 0.5;
+}
+
+.social:hover > li:hover {
+	opacity: 1;
 }
