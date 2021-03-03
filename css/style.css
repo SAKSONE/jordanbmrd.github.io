@@ -1,3 +1,45 @@
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px) {
+	body {
+		width: auto;
+		overflow-x: hidden;
+	}
+	img {
+		width: 100vw;
+	}
+	.switch{
+		position: absolute !important;
+	}
+	.aboutMainBox img {
+		margin: 20px 0px;
+	}
+	.aboutMainBox div {
+		text-align: center;
+	}
+	.name {
+		font-size: 15px !important;
+		font-weight: bold;
+	}
+	.progress {
+		width: 60vw !important;
+	}
+	.titreSection {
+		width: 100%;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	.logo {
+		width: 30% !important;
+	}
+	.welcomeBox {
+		text-align: center;
+	}
+}
+
+
+/* CSS */
+
 html {
 	scroll-behavior: smooth;
 }
@@ -135,6 +177,7 @@ button:focus {outline:0;}
 	justify-content: space-around;
 	align-items: center;
 	width: 40%;
+	flex-wrap: wrap;
 }
 .descAbout {
 	line-height: 1.5em;
