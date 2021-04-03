@@ -108,6 +108,26 @@
 			</div>
 		</div>
 
+		<hr class="divider width10" data-aos="fade-right">
+
+		<div class="palmarandom">
+			<div class="titreSection" data-aos="fade-right">
+				<p align="center">
+					<b>PALMARANDOM</b><br>
+					<em>(Langage : PHP, Javascript)</em>
+				</p>
+				<button id="palmarandomMoreButton" class="moreButton">
+					<i class="fas fa-plus"></i>
+				</button>
+			</div>
+			<div id="descriptionPalmarandom">
+				<p data-aos="fade-right">J'ai réalisé ce projet en avril 2021. Il n'était pas compliqué à mettre en place mais m'a permis d'apprendre à utiliser l'API Youtube en PHP. Si vous ne savez pas quoi faire, n'hésitez pas à vous rendre sur <a href="http://palmarandom.rf.gd/" target="_blank">Palmarandom</a>, une playlist de 10 vidéos aléatoires de la chaîne du Palmashow sera générée pour vous.</p>
+				<a href="http://palmarandom.rf.gd/" target="_blank">
+					<img src="./img/palmarandomMac.png" alt="Mac Image" data-aos="fade-right">
+				</a>
+			</div>
+		</div>
+
 		<p class="subtitle">...</p>
 	</div>
 
@@ -244,6 +264,7 @@
 		// Bouton pour afficher les infos des projets
 		var buttonSeeMoreCalc = document.getElementById("calculetteMoreButton");
 		var buttonSeeMorePendu = document.getElementById("penduMoreButton");
+		var buttonSeeMorePalma = document.getElementById("palmarandomMoreButton");
 
 		// Pour le mode nuit
 
@@ -251,6 +272,8 @@
 
 		const enableNightMode = () => {
 			// BLACK MODE
+
+			// CALCULETTE
 
 			buttonSeeMoreCalc.style.color = "white";
 			buttonSeeMoreCalc.style.border = "3px solid white";
@@ -265,6 +288,8 @@
 				buttonSeeMoreCalc.style.backgroundColor = "transparent";
 			});
 
+			// PENDU
+
 			buttonSeeMorePendu.style.color = "white";
 			buttonSeeMorePendu.style.border = "3px solid white";
 
@@ -275,6 +300,20 @@
 			buttonSeeMorePendu.addEventListener("mouseleave", () => {
 				buttonSeeMorePendu.style.color = "white";
 				buttonSeeMorePendu.style.backgroundColor = "transparent";
+			});
+
+			// PALMARANDOM
+
+			buttonSeeMorePalma.style.color = "white";
+			buttonSeeMorePalma.style.border = "3px solid white";
+
+			buttonSeeMorePalma.addEventListener("mouseover", () => {
+				buttonSeeMorePalma.style.color = "black";
+				buttonSeeMorePalma.style.backgroundColor = "white";
+			});
+			buttonSeeMorePalma.addEventListener("mouseleave", () => {
+				buttonSeeMorePalma.style.color = "white";
+				buttonSeeMorePalma.style.backgroundColor = "transparent";
 			});
 
 			document.getElementsByTagName("footer")[0].style.backgroundColor = "#2e3131";
@@ -329,6 +368,8 @@
 		const disableNightMode = () => {
 			// WHITE MODE
 
+			// CALCULETTE
+
 			buttonSeeMoreCalc.style.color = "black";
 			buttonSeeMoreCalc.style.border = "3px solid black";
 
@@ -342,6 +383,8 @@
 				buttonSeeMoreCalc.style.backgroundColor = "transparent";
 			});
 
+			// PENDU
+
 			buttonSeeMorePendu.style.color = "black";
 			buttonSeeMorePendu.style.border = "3px solid black";
 
@@ -353,6 +396,21 @@
 			buttonSeeMorePendu.addEventListener("mouseleave", () => {
 				buttonSeeMorePendu.style.color = "black";
 				buttonSeeMorePendu.style.backgroundColor = "transparent";
+			});
+
+			// PALMARANDOM
+
+			buttonSeeMorePalma.style.color = "black";
+			buttonSeeMorePalma.style.border = "3px solid black";
+
+			// Pour le hover
+			buttonSeeMorePalma.addEventListener("mouseover", () => {
+				buttonSeeMorePalma.style.color = "white";
+				buttonSeeMorePalma.style.backgroundColor = "black";
+			});
+			buttonSeeMorePalma.addEventListener("mouseleave", () => {
+				buttonSeeMorePalma.style.color = "black";
+				buttonSeeMorePalma.style.backgroundColor = "transparent";
 			});
 
 			document.getElementsByTagName("footer")[0].style.backgroundColor = "#F3F3F3";
@@ -471,6 +529,23 @@
 
 
 			isPenduInfoOpen = !isPenduInfoOpen; // Si c'était ouvert on passe en mode fermé et inversement
+		});
+
+
+		/* PALMARANDOM DESCRIPTION */
+
+		var isPalmaInfoOpen = false;
+		var descriptionPalmarandom = document.querySelectorAll("div#descriptionPalmarandom > p")[0];
+
+		buttonSeeMorePalma.addEventListener("click", () => {
+			if (isPalmaInfoOpen) { // Si ouvert
+				descriptionPalmarandom.style.display = "none";
+			} else { // Si fermé
+				descriptionPalmarandom.style.display = "block";
+			}
+
+
+			isPalmaInfoOpen = !isPalmaInfoOpen; // Si c'était ouvert on passe en mode fermé et inversement
 		});
 	</script>
 </body>
