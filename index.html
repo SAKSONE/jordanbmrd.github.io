@@ -204,7 +204,7 @@
 			<table class="progressBarBox">
 				<tr>
 					<td>
-						<p>HTML <span style="color: lightgreen;">95%</span></p>
+						<p>HTML <span class="green">95%</span></p>
 					</td>
 					<td>
 						<div class="progressBar">
@@ -216,7 +216,7 @@
 				</tr>
 				<tr>
 					<td>
-						<p>CSS <span style="color: lightgreen;">95%</span></p>
+						<p>CSS <span class="green">95%</span></p>
 					</td>
 					<td>
 						<div class="progressBar">
@@ -228,7 +228,7 @@
 				</tr>
 				<tr>
 					<td>
-						<p>Python <span style="color: lightgreen;">90%</span></p>
+						<p>Python <span class="green">90%</span></p>
 					</td>
 					<td>
 						<div class="progressBar">
@@ -240,7 +240,7 @@
 				</tr>
 				<tr>
 					<td>
-						<p>JS <span style="color: lightgreen;">80%</span></p>
+						<p>JS <span class="green">80%</span></p>
 					</td>
 					<td>
 						<div class="progressBar">
@@ -299,12 +299,19 @@
 		var buttonSeeMorePendu = document.getElementById("penduMoreButton");
 		var buttonSeeMorePalma = document.getElementById("palmarandomMoreButton");
 
+		var greenElements = Array.from(document.getElementsByClassName("green"));
+		console.log(greenElements);
+
 		// Pour le mode nuit
 
 		var nightMode = localStorage.getItem("nightMode");
 
 		const enableNightMode = () => {
 			// BLACK MODE
+
+			greenElements.forEach((e) => {
+				e.style.color = "lightgreen";
+			});
 
 			// CALCULETTE
 
@@ -400,6 +407,10 @@
 
 		const disableNightMode = () => {
 			// WHITE MODE
+
+			greenElements.forEach((e) => {
+				e.style.color = "green";
+			});
 
 			// CALCULETTE
 
